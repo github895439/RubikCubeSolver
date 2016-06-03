@@ -1,0 +1,3115 @@
+<html>
+<script type="text/javascript" src="../LIB/k_rand.js"></script>
+<script lang="JavaScript">
+// 
+function f_Reset(){
+	var Counter1;
+	var Counter2;
+
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_1[ Counter1 ][ Counter2 ] = "›";
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_2[ Counter1 ][ Counter2 ] = "¢";
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_3[ Counter1 ][ Counter2 ] = "™";
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_4[ Counter1 ][ Counter2 ] = "¦";
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_5[ Counter1 ][ Counter2 ] = " ";
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_6[ Counter1 ][ Counter2 ] = "~";
+		}
+	}
+	return;
+}
+
+/*
+‚­‚¸‚·B
+*/
+function f_Break(){
+	var r1;
+	var r2;
+	var Counter1;
+	var Counter2;
+	var Kind;
+
+	document.forms[0].Status.value = "ˆ—’†";
+	g_CompleteFlag = "OFF";
+	g_TraceFlag = "OFF";
+	r = k_rand( 100 ) + 100;
+	// 
+	for ( Counter1 = 0; Counter1 < r; Counter1++ ){
+		Kind = Counter1 % 4;
+		r2 = k_rand( 2 )
+		for ( Counter2 = 0; Counter2 < r2; Counter2++ ){
+			// 
+			switch ( Kind ){
+			    case 0:{
+			        // 
+			        this.Rotate_121A();
+			        break;
+			    }
+			    case 1:{
+			        // 
+			        this.Rotate_131B();
+			        break;
+			    }
+			    case 2:{
+			        // 
+			        this.Rotate_123B();
+			        break;
+			    }
+			    default:{ // 3
+			        this.Rotate_133A();
+			        break;
+			    }
+			}
+		}
+		this.Disp();
+		this.R_Disp();
+/*
+		if ( !confirm( "continue?" ) ){
+			break;
+		}
+*/
+	}
+	document.forms[0].Status.value = "";
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚Q‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_232A(){
+	f_Tracer( "ã–Ê‚©‚ç‚Q—ñ–Ú‚ğY¨Z" );
+	f_Rotate_232( this );
+	return;
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚R‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_232B(){
+	f_Tracer( "ã–Ê‚©‚ç‚Q—ñ–Ú‚ğZ¨Y" );
+	f_Rotate_232( this );
+	f_Rotate_232( this );
+	f_Rotate_232( this );
+	return;
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_232C(){
+	f_Tracer( "ã–Ê‚©‚ç‚Q—ñ–Ú‚ğ”½“]" );
+	f_Rotate_232( this );
+	f_Rotate_232( this );
+	return;
+}
+
+/*
+‚Q‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚P‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+‚½‚¾‚µA’†S‚ª“®‚¢‚Ä‚µ‚Ü‚¤‚Ì‚ÅA‚P—ñ–Ú‚Æ‚R—ñ–Ú‚ğ‚Q‚V‚O“x‰ñ“]‚·‚é‚±‚Æ‚É‚æ‚Á‚ÄÀŒ»B
+*/
+function f_Rotate_232( obj ){
+	var tmp = g_TraceFlag;
+	g_TraceFlag = "OFF";
+	obj.Rotate_231A();
+	obj.Rotate_231A();
+	obj.Rotate_231A();
+	obj.Rotate_233A();
+	obj.Rotate_233A();
+	obj.Rotate_233A();
+	g_TraceFlag = tmp;
+	return;
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚Q‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_233A(){
+	f_Tracer( "ã–Ê‚©‚ç‚R—ñ–Ú‚ğY¨Z" );
+	f_Rotate_233( this );
+	return;
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚R‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_233B(){
+	f_Tracer( "ã–Ê‚©‚ç‚R—ñ–Ú‚ğZ¨Y" );
+	f_Rotate_233( this );
+	f_Rotate_233( this );
+	f_Rotate_233( this );
+	return;
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_233C(){
+	f_Tracer( "ã–Ê‚©‚ç‚R—ñ–Ú‚ğ”½“]" );
+	f_Rotate_233( this );
+	f_Rotate_233( this );
+	return;
+}
+
+/*
+‚Q‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚P‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+*/
+function f_Rotate_233( obj ){
+	var tmp = new Array( "", "", "" );
+
+    tmp[ 0 ] = obj.men_2[ 2 ][ 2 ];
+    tmp[ 1 ] = obj.men_2[ 1 ][ 2 ];
+    tmp[ 2 ] = obj.men_2[ 0 ][ 2 ];
+    obj.men_2[ 2 ][ 2 ] = obj.men_4[ 2 ][ 2 ];
+    obj.men_2[ 1 ][ 2 ] = obj.men_4[ 1 ][ 2 ];
+    obj.men_2[ 0 ][ 2 ] = obj.men_4[ 0 ][ 2 ];
+    obj.men_4[ 2 ][ 2 ] = obj.men_5[ 2 ][ 2 ];
+    obj.men_4[ 1 ][ 2 ] = obj.men_5[ 1 ][ 2 ];
+    obj.men_4[ 0 ][ 2 ] = obj.men_5[ 0 ][ 2 ];
+    obj.men_5[ 2 ][ 2 ] = obj.men_3[ 2 ][ 2 ];
+    obj.men_5[ 1 ][ 2 ] = obj.men_3[ 1 ][ 2 ];
+    obj.men_5[ 0 ][ 2 ] = obj.men_3[ 0 ][ 2 ];
+    obj.men_3[ 2 ][ 2 ] = tmp[ 0 ];
+    obj.men_3[ 1 ][ 2 ] = tmp[ 1 ];
+    obj.men_3[ 0 ][ 2 ] = tmp[ 2 ];
+    tmp[ 0 ] = obj.men_6[ 2 ][ 0 ];
+    tmp[ 1 ] = obj.men_6[ 1 ][ 0 ];
+    tmp[ 2 ] = obj.men_6[ 0 ][ 0 ];
+    obj.men_6[ 2 ][ 0 ] = obj.men_6[ 0 ][ 0 ];
+    obj.men_6[ 1 ][ 0 ] = obj.men_6[ 0 ][ 1 ];
+    obj.men_6[ 0 ][ 0 ] = obj.men_6[ 0 ][ 2 ];
+    obj.men_6[ 0 ][ 0 ] = obj.men_6[ 0 ][ 2 ];
+    obj.men_6[ 0 ][ 1 ] = obj.men_6[ 1 ][ 2 ];
+    obj.men_6[ 0 ][ 2 ] = obj.men_6[ 2 ][ 2 ];
+    obj.men_6[ 0 ][ 2 ] = obj.men_6[ 2 ][ 2 ];
+    obj.men_6[ 1 ][ 2 ] = obj.men_6[ 2 ][ 1 ];
+    obj.men_6[ 2 ][ 2 ] = obj.men_6[ 2 ][ 0 ];
+    obj.men_6[ 2 ][ 2 ] = tmp[ 0 ];
+    obj.men_6[ 2 ][ 1 ] = tmp[ 1 ];
+    obj.men_6[ 2 ][ 0 ] = tmp[ 2 ];
+	return;
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚Q‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_231A(){
+	f_Tracer( "ã–Ê‚©‚ç‚P—ñ–Ú‚ğY¨Z" );
+	f_Rotate_231( this );
+	return;
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚R‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_231B(){
+	f_Tracer( "ã–Ê‚©‚ç‚P—ñ–Ú‚ğZ¨Y" );
+	f_Rotate_231( this );
+	f_Rotate_231( this );
+	f_Rotate_231( this );
+	return;
+}
+
+// ‚P‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_231C(){
+	f_Tracer( "ã–Ê‚©‚ç‚P—ñ–Ú‚ğ”½“]" );
+	f_Rotate_231( this );
+	f_Rotate_231( this );
+	return;
+}
+
+/*
+‚Q‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚P‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+*/
+function f_Rotate_231( obj ){
+	var tmp = new Array( "", "", "" );
+
+    tmp[ 0 ] = obj.men_2[ 2 ][ 0 ];
+    tmp[ 1 ] = obj.men_2[ 1 ][ 0 ];
+    tmp[ 2 ] = obj.men_2[ 0 ][ 0 ];
+    obj.men_2[ 2 ][ 0 ] = obj.men_4[ 2 ][ 0 ];
+    obj.men_2[ 1 ][ 0 ] = obj.men_4[ 1 ][ 0 ];
+    obj.men_2[ 0 ][ 0 ] = obj.men_4[ 0 ][ 0 ];
+    obj.men_4[ 2 ][ 0 ] = obj.men_5[ 2 ][ 0 ];
+    obj.men_4[ 1 ][ 0 ] = obj.men_5[ 1 ][ 0 ];
+    obj.men_4[ 0 ][ 0 ] = obj.men_5[ 0 ][ 0 ];
+    obj.men_5[ 2 ][ 0 ] = obj.men_3[ 2 ][ 0 ];
+    obj.men_5[ 1 ][ 0 ] = obj.men_3[ 1 ][ 0 ];
+    obj.men_5[ 0 ][ 0 ] = obj.men_3[ 0 ][ 0 ];
+    obj.men_3[ 2 ][ 0 ] = tmp[ 0 ];
+    obj.men_3[ 1 ][ 0 ] = tmp[ 1 ];
+    obj.men_3[ 0 ][ 0 ] = tmp[ 2 ];
+    tmp[ 0 ] = obj.men_1[ 0 ][ 0 ];
+    tmp[ 1 ] = obj.men_1[ 1 ][ 0 ];
+    tmp[ 2 ] = obj.men_1[ 2 ][ 0 ];
+    obj.men_1[ 0 ][ 0 ] = obj.men_1[ 2 ][ 0 ];
+    obj.men_1[ 1 ][ 0 ] = obj.men_1[ 2 ][ 1 ];
+    obj.men_1[ 2 ][ 0 ] = obj.men_1[ 2 ][ 2 ];
+    obj.men_1[ 2 ][ 0 ] = obj.men_1[ 2 ][ 2 ];
+    obj.men_1[ 2 ][ 1 ] = obj.men_1[ 1 ][ 2 ];
+    obj.men_1[ 2 ][ 2 ] = obj.men_1[ 0 ][ 2 ];
+    obj.men_1[ 2 ][ 2 ] = obj.men_1[ 0 ][ 2 ];
+    obj.men_1[ 1 ][ 2 ] = obj.men_1[ 0 ][ 1 ];
+    obj.men_1[ 0 ][ 2 ] = obj.men_1[ 0 ][ 0 ];
+    obj.men_1[ 0 ][ 2 ] = tmp[ 0 ];
+    obj.men_1[ 0 ][ 1 ] = tmp[ 1 ];
+    obj.men_1[ 0 ][ 0 ] = tmp[ 2 ];
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚P‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_132A(){
+	f_Tracer( "¶–Ê‚©‚ç‚Q—ñ–Ú‚ğX¨Z" );
+	f_Rotate_132( this );
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚R‚©‚ç‚P‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_132B(){
+	f_Tracer( "¶–Ê‚©‚ç‚Q—ñ–Ú‚ğZ¨X" );
+	f_Rotate_132( this );
+	f_Rotate_132( this );
+	f_Rotate_132( this );
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_132C(){
+	f_Tracer( "¶–Ê‚©‚ç‚Q—ñ–Ú‚ğ”½“]" );
+	f_Rotate_132( this );
+	f_Rotate_132( this );
+	return;
+}
+
+/*
+‚P‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚Q‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+‚½‚¾‚µA’†S‚ª“®‚¢‚Ä‚µ‚Ü‚¤‚Ì‚ÅA‚P—ñ–Ú‚Æ‚R—ñ–Ú‚ğ‚Q‚V‚O“x‰ñ“]‚·‚é‚±‚Æ‚É‚æ‚Á‚ÄÀŒ»B
+*/
+function f_Rotate_132( obj ){
+	var tmp = g_TraceFlag;
+	g_TraceFlag = "OFF";
+	obj.Rotate_131A();
+	obj.Rotate_131A();
+	obj.Rotate_131A();
+	obj.Rotate_133A();
+	obj.Rotate_133A();
+	obj.Rotate_133A();
+	g_TraceFlag = tmp;
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚P‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_133A(){
+	f_Tracer( "¶–Ê‚©‚ç‚R—ñ–Ú‚ğX¨Z" );
+	f_Rotate_133( this );
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚R‚©‚ç‚P‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_133B(){
+	f_Tracer( "¶–Ê‚©‚ç‚R—ñ–Ú‚ğZ¨X" );
+	f_Rotate_133( this );
+	f_Rotate_133( this );
+	f_Rotate_133( this );
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_133C(){
+	f_Tracer( "¶–Ê‚©‚ç‚R—ñ–Ú‚ğ”½“]" );
+	f_Rotate_133( this );
+	f_Rotate_133( this );
+	return;
+}
+
+/*
+‚P‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚Q‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+*/
+function f_Rotate_133( obj ){
+	var tmp = new Array( "", "", "" );
+
+    tmp[ 0 ] = obj.men_1[ 0 ][ 2 ];
+    tmp[ 1 ] = obj.men_1[ 1 ][ 2 ];
+    tmp[ 2 ] = obj.men_1[ 2 ][ 2 ];
+    obj.men_1[ 0 ][ 2 ] = obj.men_4[ 0 ][ 0 ];
+    obj.men_1[ 1 ][ 2 ] = obj.men_4[ 0 ][ 1 ];
+    obj.men_1[ 2 ][ 2 ] = obj.men_4[ 0 ][ 2 ];
+    obj.men_4[ 0 ][ 0 ] = obj.men_6[ 2 ][ 2 ];
+    obj.men_4[ 0 ][ 1 ] = obj.men_6[ 2 ][ 1 ];
+    obj.men_4[ 0 ][ 2 ] = obj.men_6[ 2 ][ 0 ];
+    obj.men_6[ 2 ][ 2 ] = obj.men_3[ 2 ][ 2 ];
+    obj.men_6[ 2 ][ 1 ] = obj.men_3[ 2 ][ 1 ];
+    obj.men_6[ 2 ][ 0 ] = obj.men_3[ 2 ][ 0 ];
+    obj.men_3[ 2 ][ 2 ] = tmp[ 0 ];
+    obj.men_3[ 2 ][ 1 ] = tmp[ 1 ];
+    obj.men_3[ 2 ][ 0 ] = tmp[ 2 ];
+    tmp[ 0 ] = obj.men_5[ 0 ][ 0 ];
+    tmp[ 1 ] = obj.men_5[ 1 ][ 0 ];
+    tmp[ 2 ] = obj.men_5[ 2 ][ 0 ];
+    obj.men_5[ 0 ][ 0 ] = obj.men_5[ 2 ][ 0 ];
+    obj.men_5[ 1 ][ 0 ] = obj.men_5[ 2 ][ 1 ];
+    obj.men_5[ 2 ][ 0 ] = obj.men_5[ 2 ][ 2 ];
+    obj.men_5[ 2 ][ 0 ] = obj.men_5[ 2 ][ 2 ];
+    obj.men_5[ 2 ][ 1 ] = obj.men_5[ 1 ][ 2 ];
+    obj.men_5[ 2 ][ 2 ] = obj.men_5[ 0 ][ 2 ];
+    obj.men_5[ 2 ][ 2 ] = obj.men_5[ 0 ][ 2 ];
+    obj.men_5[ 1 ][ 2 ] = obj.men_5[ 0 ][ 1 ];
+    obj.men_5[ 0 ][ 2 ] = obj.men_5[ 0 ][ 0 ];
+    obj.men_5[ 0 ][ 2 ] = tmp[ 0 ];
+    obj.men_5[ 0 ][ 1 ] = tmp[ 1 ];
+    obj.men_5[ 0 ][ 0 ] = tmp[ 2 ];
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚P‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_131A(){
+	f_Tracer( "¶–Ê‚©‚ç‚P—ñ–Ú‚ğX¨Z" );
+	f_Rotate_131( this );
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚R‚©‚ç‚P‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_131B(){
+	f_Tracer( "¶–Ê‚©‚ç‚P—ñ–Ú‚ğZ¨X" );
+	f_Rotate_131( this );
+	f_Rotate_131( this );
+	f_Rotate_131( this );
+	return;
+}
+
+// ‚Q‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_131C(){
+	f_Tracer( "¶–Ê‚©‚ç‚P—ñ–Ú‚ğ”½“]" );
+	f_Rotate_131( this );
+	f_Rotate_131( this );
+	return;
+}
+
+/*
+‚P‚©‚ç‚R‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚Q‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+*/
+function f_Rotate_131( obj ){
+	var tmp = new Array( "", "", "" );
+
+    tmp[ 0 ] = obj.men_1[ 0 ][ 0 ];
+    tmp[ 1 ] = obj.men_1[ 1 ][ 0 ];
+    tmp[ 2 ] = obj.men_1[ 2 ][ 0 ];
+    obj.men_1[ 0 ][ 0 ] = obj.men_4[ 2 ][ 0 ];
+    obj.men_1[ 1 ][ 0 ] = obj.men_4[ 2 ][ 1 ];
+    obj.men_1[ 2 ][ 0 ] = obj.men_4[ 2 ][ 2 ];
+    obj.men_4[ 2 ][ 0 ] = obj.men_6[ 0 ][ 2 ];
+    obj.men_4[ 2 ][ 1 ] = obj.men_6[ 0 ][ 1 ];
+    obj.men_4[ 2 ][ 2 ] = obj.men_6[ 0 ][ 0 ];
+    obj.men_6[ 0 ][ 2 ] = obj.men_3[ 0 ][ 2 ];
+    obj.men_6[ 0 ][ 1 ] = obj.men_3[ 0 ][ 1 ];
+    obj.men_6[ 0 ][ 0 ] = obj.men_3[ 0 ][ 0 ];
+    obj.men_3[ 0 ][ 2 ] = tmp[ 0 ];
+    obj.men_3[ 0 ][ 1 ] = tmp[ 1 ];
+    obj.men_3[ 0 ][ 0 ] = tmp[ 2 ];
+    tmp[ 0 ] = obj.men_2[ 2 ][ 0 ];
+    tmp[ 1 ] = obj.men_2[ 1 ][ 0 ];
+    tmp[ 2 ] = obj.men_2[ 0 ][ 0 ];
+    obj.men_2[ 2 ][ 0 ] = obj.men_2[ 0 ][ 0 ];
+    obj.men_2[ 1 ][ 0 ] = obj.men_2[ 0 ][ 1 ];
+    obj.men_2[ 0 ][ 0 ] = obj.men_2[ 0 ][ 2 ];
+    obj.men_2[ 0 ][ 0 ] = obj.men_2[ 0 ][ 2 ];
+    obj.men_2[ 0 ][ 1 ] = obj.men_2[ 1 ][ 2 ];
+    obj.men_2[ 0 ][ 2 ] = obj.men_2[ 2 ][ 2 ];
+    obj.men_2[ 0 ][ 2 ] = obj.men_2[ 2 ][ 2 ];
+    obj.men_2[ 1 ][ 2 ] = obj.men_2[ 2 ][ 1 ];
+    obj.men_2[ 2 ][ 2 ] = obj.men_2[ 2 ][ 0 ];
+    obj.men_2[ 2 ][ 2 ] = tmp[ 0 ];
+    obj.men_2[ 2 ][ 1 ] = tmp[ 1 ];
+    obj.men_2[ 2 ][ 0 ] = tmp[ 2 ];
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚P‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_122A(){
+	f_Tracer( "‰E–Ê‚©‚ç‚Q—ñ–Ú‚ğX¨Y" );
+	f_Rotate_122( this );
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚Q‚©‚ç‚P‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_122B(){
+	f_Tracer( "‰E–Ê‚©‚ç‚Q—ñ–Ú‚ğY¨X" );
+	f_Rotate_122( this );
+	f_Rotate_122( this );
+	f_Rotate_122( this );
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_122C(){
+	f_Tracer( "‰E–Ê‚©‚ç‚Q—ñ–Ú‚ğ”½“]" );
+	f_Rotate_122( this );
+	f_Rotate_122( this );
+	return;
+}
+
+/*
+‚P‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚R‚Ì–Ê‚©‚ç‚Q—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+‚½‚¾‚µA’†S‚ª“®‚¢‚Ä‚µ‚Ü‚¤‚Ì‚ÅA‚P—ñ–Ú‚Æ‚R—ñ–Ú‚ğ‚Q‚V‚O“x‰ñ“]‚·‚é‚±‚Æ‚É‚æ‚Á‚ÄÀŒ»B
+*/
+function f_Rotate_122( obj ){
+	var tmp = g_TraceFlag;
+	g_TraceFlag = "OFF";
+	obj.Rotate_121A();
+	obj.Rotate_121A();
+	obj.Rotate_121A();
+	obj.Rotate_123A();
+	obj.Rotate_123A();
+	obj.Rotate_123A();
+	g_TraceFlag = tmp;
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚P‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_123A(){
+	f_Tracer( "‰E–Ê‚©‚ç‚R—ñ–Ú‚ğX¨Y" );
+	f_Rotate_123( this );
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚Q‚©‚ç‚P‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_123B(){
+	f_Tracer( "‰E–Ê‚©‚ç‚R—ñ–Ú‚ğY¨X" );
+	f_Rotate_123( this );
+	f_Rotate_123( this );
+	f_Rotate_123( this );
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_123C(){
+	f_Tracer( "‰E–Ê‚©‚ç‚R—ñ–Ú‚ğ”½“]" );
+	f_Rotate_123( this );
+	f_Rotate_123( this );
+	return;
+}
+
+/*
+‚P‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚R‚Ì–Ê‚©‚ç‚R—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+*/
+function f_Rotate_123( obj ){
+	var tmp = new Array( "", "", "" );
+
+    tmp[ 0 ] = obj.men_1[ 2 ][ 0 ];
+    tmp[ 1 ] = obj.men_1[ 2 ][ 1 ];
+    tmp[ 2 ] = obj.men_1[ 2 ][ 2 ];
+    obj.men_1[ 2 ][ 0 ] = obj.men_5[ 2 ][ 0 ];
+    obj.men_1[ 2 ][ 1 ] = obj.men_5[ 2 ][ 1 ];
+    obj.men_1[ 2 ][ 2 ] = obj.men_5[ 2 ][ 2 ];
+    obj.men_5[ 2 ][ 0 ] = obj.men_6[ 2 ][ 2 ];
+    obj.men_5[ 2 ][ 1 ] = obj.men_6[ 1 ][ 2 ];
+    obj.men_5[ 2 ][ 2 ] = obj.men_6[ 0 ][ 2 ];
+    obj.men_6[ 2 ][ 2 ] = obj.men_2[ 0 ][ 2 ];
+    obj.men_6[ 1 ][ 2 ] = obj.men_2[ 0 ][ 1 ];
+    obj.men_6[ 0 ][ 2 ] = obj.men_2[ 0 ][ 0 ];
+    obj.men_2[ 0 ][ 2 ] = tmp[ 0 ];
+    obj.men_2[ 0 ][ 1 ] = tmp[ 1 ];
+    obj.men_2[ 0 ][ 0 ] = tmp[ 2 ];
+    tmp[ 0 ] = obj.men_4[ 2 ][ 0 ];
+    tmp[ 1 ] = obj.men_4[ 1 ][ 0 ];
+    tmp[ 2 ] = obj.men_4[ 0 ][ 0 ];
+    obj.men_4[ 2 ][ 0 ] = obj.men_4[ 0 ][ 0 ];
+    obj.men_4[ 1 ][ 0 ] = obj.men_4[ 0 ][ 1 ];
+    obj.men_4[ 0 ][ 0 ] = obj.men_4[ 0 ][ 2 ];
+    obj.men_4[ 0 ][ 0 ] = obj.men_4[ 0 ][ 2 ];
+    obj.men_4[ 0 ][ 1 ] = obj.men_4[ 1 ][ 2 ];
+    obj.men_4[ 0 ][ 2 ] = obj.men_4[ 2 ][ 2 ];
+    obj.men_4[ 0 ][ 2 ] = obj.men_4[ 2 ][ 2 ];
+    obj.men_4[ 1 ][ 2 ] = obj.men_4[ 2 ][ 1 ];
+    obj.men_4[ 2 ][ 2 ] = obj.men_4[ 2 ][ 0 ];
+    obj.men_4[ 2 ][ 2 ] = tmp[ 0 ];
+    obj.men_4[ 2 ][ 1 ] = tmp[ 1 ];
+    obj.men_4[ 2 ][ 0 ] = tmp[ 2 ];
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚P‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_121A(){
+	f_Tracer( "‰E–Ê‚©‚ç‚P—ñ–Ú‚ğX¨Y" );
+	f_Rotate_121( this );
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚Q‚©‚ç‚P‚Ì–Ê‚ÉŒü‚©‚Á‚Ä‚X‚O“x‰ñ“]
+function f_Rotate_121B(){
+	f_Tracer( "‰E–Ê‚©‚ç‚P—ñ–Ú‚ğY¨X" );
+	f_Rotate_121( this );
+	f_Rotate_121( this );
+	f_Rotate_121( this );
+	return;
+}
+
+// ‚R‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğA‚P‚W‚O“x‰ñ“]
+function f_Rotate_121C(){
+	f_Tracer( "‰E–Ê‚©‚ç‚P—ñ–Ú‚ğ”½“]" );
+	f_Rotate_121( this );
+	f_Rotate_121( this );
+	return;
+}
+
+/*
+‚P‚©‚ç‚Q‚Ì–Ê‚ÉŒü‚©‚Á‚ÄA‚R‚Ì–Ê‚©‚ç‚P—ñ–Ú‚ğ‚X‚O“x‰ñ“]B
+*/
+function f_Rotate_121( obj ){
+	var tmp = new Array( "", "", "" );
+
+    tmp[ 0 ] = obj.men_1[ 0 ][ 0 ];
+    tmp[ 1 ] = obj.men_1[ 0 ][ 1 ];
+    tmp[ 2 ] = obj.men_1[ 0 ][ 2 ];
+    obj.men_1[ 0 ][ 0 ] = obj.men_5[ 0 ][ 0 ];
+    obj.men_1[ 0 ][ 1 ] = obj.men_5[ 0 ][ 1 ];
+    obj.men_1[ 0 ][ 2 ] = obj.men_5[ 0 ][ 2 ];
+    obj.men_5[ 0 ][ 0 ] = obj.men_6[ 2 ][ 0 ];
+    obj.men_5[ 0 ][ 1 ] = obj.men_6[ 1 ][ 0 ];
+    obj.men_5[ 0 ][ 2 ] = obj.men_6[ 0 ][ 0 ];
+    obj.men_6[ 2 ][ 0 ] = obj.men_2[ 2 ][ 2 ];
+    obj.men_6[ 1 ][ 0 ] = obj.men_2[ 2 ][ 1 ];
+    obj.men_6[ 0 ][ 0 ] = obj.men_2[ 2 ][ 0 ];
+    obj.men_2[ 2 ][ 2 ] = tmp[ 0 ];
+    obj.men_2[ 2 ][ 1 ] = tmp[ 1 ];
+    obj.men_2[ 2 ][ 0 ] = tmp[ 2 ];
+    tmp[ 0 ] = obj.men_3[ 0 ][ 0 ];
+    tmp[ 1 ] = obj.men_3[ 1 ][ 0 ];
+    tmp[ 2 ] = obj.men_3[ 2 ][ 0 ];
+    obj.men_3[ 0 ][ 0 ] = obj.men_3[ 2 ][ 0 ];
+    obj.men_3[ 1 ][ 0 ] = obj.men_3[ 2 ][ 1 ];
+    obj.men_3[ 2 ][ 0 ] = obj.men_3[ 2 ][ 2 ];
+    obj.men_3[ 2 ][ 0 ] = obj.men_3[ 2 ][ 2 ];
+    obj.men_3[ 2 ][ 1 ] = obj.men_3[ 1 ][ 2 ];
+    obj.men_3[ 2 ][ 2 ] = obj.men_3[ 0 ][ 2 ];
+    obj.men_3[ 2 ][ 2 ] = obj.men_3[ 0 ][ 2 ];
+    obj.men_3[ 1 ][ 2 ] = obj.men_3[ 0 ][ 1 ];
+    obj.men_3[ 0 ][ 2 ] = obj.men_3[ 0 ][ 0 ];
+    obj.men_3[ 0 ][ 2 ] = tmp[ 0 ];
+    obj.men_3[ 0 ][ 1 ] = tmp[ 1 ];
+    obj.men_3[ 0 ][ 0 ] = tmp[ 2 ];
+	return;
+}
+
+// •¶š—ñ‚ğ‚S”{
+function f_FourTimes( str ){
+	return str + str + str + str;
+}
+
+// •¶š—ñ‚ğ‚Q”{
+function f_TwoTimes( str ){
+	return str + str;
+}
+
+// ‹“_i’†S‚ªã”’A¶ƒIƒŒƒ“ƒWA‰E‰©j‚ğ³–Ê‚Æ‚µ‚ÄŒ©‚½ó‘Ô‚ğ•\¦‚·‚éB
+function f_Disp(){
+	var DispString;
+
+	document.forms[0].Status.value = "ˆ—’†";
+	DispString = "QQQQQQQ" + f_FourTimes( this.men_1[ 2 ][ 2 ] ) + "\n";
+	DispString = DispString + "QQQQQQQ" + f_FourTimes( this.men_1[ 2 ][ 2 ] ) + "\n";
+	DispString = DispString + "QQQQ" + f_FourTimes( this.men_1[ 2 ][ 1 ] ) + "QQ" + f_FourTimes( this.men_1[ 1 ][ 2 ] ) + "\n";
+	DispString = DispString + "QQQQ" + f_FourTimes( this.men_1[ 2 ][ 1 ] ) + "QQ" + f_FourTimes( this.men_1[ 1 ][ 2 ] ) + "\n";
+	DispString = DispString + "Q" + f_FourTimes( this.men_1[ 2 ][ 0 ] ) + "QQ››››QQ" + f_FourTimes( this.men_1[ 0 ][ 2 ] ) + "\n";
+	DispString = DispString + "Q" + f_FourTimes( this.men_1[ 2 ][ 0 ] ) + "QQ››››QQ" + f_FourTimes( this.men_1[ 0 ][ 2 ] ) + "\n";
+	DispString = DispString + "QQQQ" + f_FourTimes( this.men_1[ 1 ][ 0 ] ) + "QQ" + f_FourTimes( this.men_1[ 0 ][ 1 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_2[ 0 ][ 0 ] ) + "QQ" + f_FourTimes( this.men_1[ 1 ][ 0 ] ) + "QQ" +
+			f_FourTimes( this.men_1[ 0 ][ 1 ] ) + "QQ" + f_TwoTimes( this.men_3[ 2 ][ 0 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_2[ 0 ][ 0 ] ) + "QQQQQ" + f_FourTimes( this.men_1[ 0 ][ 0 ] ) + "QQQQQ" +
+			f_TwoTimes( this.men_3[ 2 ][ 0 ] ) + "\n";
+	DispString = DispString + "QQQQQQQ" + f_FourTimes( this.men_1[ 0 ][ 0 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_2[ 0 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_2[ 1 ][ 0 ] ) + "QQQQQQQQ" +
+			f_TwoTimes( this.men_3[ 1 ][ 0 ] ) + "Q" + f_TwoTimes( this.men_3[ 2 ][ 1 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_2[ 0 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_2[ 1 ][ 0 ] ) + "QQQQQQQQ" +
+			f_TwoTimes( this.men_3[ 1 ][ 0 ] ) + "Q" + f_TwoTimes( this.men_3[ 2 ][ 1 ] ) + "\n";
+	DispString = DispString + "\n";
+	DispString = DispString + f_TwoTimes( this.men_2[ 0 ][ 2 ] ) + "Q" + f_TwoTimes( this.men_2[ 1 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_2[ 2 ][ 0 ] ) + "QQ" +
+			f_TwoTimes( this.men_3[ 0 ][ 0 ] ) + "Q" + f_TwoTimes( this.men_3[ 1 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_3[ 2 ][ 2 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_2[ 0 ][ 2 ] ) + "Q" + f_TwoTimes( this.men_2[ 1 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_2[ 2 ][ 0 ] ) + "QQ" +
+			f_TwoTimes( this.men_3[ 0 ][ 0 ] ) + "Q" + f_TwoTimes( this.men_3[ 1 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_3[ 2 ][ 2 ] ) + "\n";
+	DispString = DispString + "\n";
+	DispString = DispString + "QQQ" + f_TwoTimes( this.men_2[ 1 ][ 2 ] ) + "Q" + f_TwoTimes( this.men_2[ 2 ][ 1 ] ) + "QQ" +
+			f_TwoTimes( this.men_3[ 0 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_3[ 1 ][ 2 ] ) + "\n";
+	DispString = DispString + "QQQ" + f_TwoTimes( this.men_2[ 1 ][ 2 ] ) + "Q" + f_TwoTimes( this.men_2[ 2 ][ 1 ] ) + "QQ" +
+			f_TwoTimes( this.men_3[ 0 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_3[ 1 ][ 2 ] ) + "\n";
+	DispString = DispString + "\n";
+	DispString = DispString + "QQQQQQ" + f_TwoTimes( this.men_2[ 2 ][ 2 ] ) + "QQ" + f_TwoTimes( this.men_3[ 0 ][ 2 ] ) + "\n";
+	DispString = DispString + "QQQQQQ" + f_TwoTimes( this.men_2[ 2 ][ 2 ] ) + "QQ" + f_TwoTimes( this.men_3[ 0 ][ 2 ] ) + "\n";
+	document.forms[0].Disp.value = DispString;
+	document.forms[0].Status.value = "";
+}
+// Disp‚Ì^— ‚©‚çŒ©‚½ó‘Ô‚ğ•\¦‚·‚éB
+function f_R_Disp(){
+	var DispString;
+
+	DispString = "QQQQQQ" + f_TwoTimes( this.men_5[ 2 ][ 0 ] ) + "QQ" + f_TwoTimes( this.men_4[ 0 ][ 0 ] ) + "\n";
+	DispString = DispString + "QQQQQQ" + f_TwoTimes( this.men_5[ 2 ][ 0 ] ) + "QQ" + f_TwoTimes( this.men_4[ 0 ][ 0 ] ) + "\n";
+	DispString = DispString + "\n";
+	DispString = DispString + "QQQ" + f_TwoTimes( this.men_5[ 1 ][ 0 ] ) + "Q" + f_TwoTimes( this.men_5[ 2 ][ 1 ] ) + "QQ" +
+			f_TwoTimes( this.men_4[ 0 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_4[ 1 ][ 0 ] ) + "\n";
+	DispString = DispString + "QQQ" + f_TwoTimes( this.men_5[ 1 ][ 0 ] ) + "Q" + f_TwoTimes( this.men_5[ 2 ][ 1 ] ) + "QQ" +
+			f_TwoTimes( this.men_4[ 0 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_4[ 1 ][ 0 ] ) + "\n";
+	DispString = DispString + "\n";
+	DispString = DispString + f_TwoTimes( this.men_5[ 0 ][ 0 ] ) + "Q" + f_TwoTimes( this.men_5[ 1 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_5[ 2 ][ 2 ] ) + "QQ" +
+			f_TwoTimes( this.men_4[ 0 ][ 2 ] ) + "Q" + f_TwoTimes( this.men_4[ 1 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_4[ 2 ][ 0 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_5[ 0 ][ 0 ] ) + "Q" + f_TwoTimes( this.men_5[ 1 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_5[ 2 ][ 2 ] ) + "QQ" +
+			f_TwoTimes( this.men_4[ 0 ][ 2 ] ) + "Q" + f_TwoTimes( this.men_4[ 1 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_4[ 2 ][ 0 ] ) + "\n";
+	DispString = DispString + "\n";
+	DispString = DispString + f_TwoTimes( this.men_5[ 0 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_5[ 1 ][ 2 ] ) + "QQQQQQQQ" +
+			f_TwoTimes( this.men_4[ 1 ][ 2 ] ) + "Q" + f_TwoTimes( this.men_4[ 2 ][ 1 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_5[ 0 ][ 1 ] ) + "Q" + f_TwoTimes( this.men_5[ 1 ][ 2 ] ) + "QQQQQQQQ" +
+			f_TwoTimes( this.men_4[ 1 ][ 2 ] ) + "Q" + f_TwoTimes( this.men_4[ 2 ][ 1 ] ) + "\n";
+	DispString = DispString + "QQQQQQQ" + f_FourTimes( this.men_6[ 2 ][ 2 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_5[ 0 ][ 2 ] ) + "QQQQQ" + f_FourTimes( this.men_6[ 2 ][ 2 ] ) + "QQQQQ" +
+			f_TwoTimes( this.men_4[ 2 ][ 2 ] ) + "\n";
+	DispString = DispString + f_TwoTimes( this.men_5[ 0 ][ 2 ] ) + "QQ" + f_FourTimes( this.men_6[ 2 ][ 1 ] ) + "QQ" +
+			f_FourTimes( this.men_6[ 1 ][ 2 ] ) + "QQ" + f_TwoTimes( this.men_4[ 2 ][ 2 ] ) + "\n";
+	DispString = DispString + "QQQQ" + f_FourTimes( this.men_6[ 2 ][ 1 ] ) + "QQ" + f_FourTimes( this.men_6[ 1 ][ 2 ] ) + "\n";
+	DispString = DispString + "Q" + f_FourTimes( this.men_6[ 2 ][ 0 ] ) + "QQ~~~~QQ" + f_FourTimes( this.men_6[ 0 ][ 2 ] ) + "\n";
+	DispString = DispString + "Q" + f_FourTimes( this.men_6[ 2 ][ 0 ] ) + "QQ~~~~QQ" + f_FourTimes( this.men_6[ 0 ][ 2 ] ) + "\n";
+	DispString = DispString + "QQQQ" + f_FourTimes( this.men_6[ 1 ][ 0 ] ) + "QQ" + f_FourTimes( this.men_6[ 0 ][ 1 ] ) + "\n";
+	DispString = DispString + "QQQQ" + f_FourTimes( this.men_6[ 1 ][ 0 ] ) + "QQ" + f_FourTimes( this.men_6[ 0 ][ 1 ] ) + "\n";
+	DispString = DispString + "QQQQQQQ" + f_FourTimes( this.men_6[ 0 ][ 0 ] ) + "\n";
+	DispString = DispString + "QQQQQQQ" + f_FourTimes( this.men_6[ 0 ][ 0 ] ) + "\n";
+	document.forms[0].R_Disp.value = DispString;
+	return;
+}
+
+// 
+function f_Input(){
+	var tmp1;
+	var tmp2;
+	var Counter;
+
+	g_CompleteFlag = "OFF";
+	// 
+	for ( tmp1 = document.forms[0].In.value; tmp1.indexOf( "\n" ) != -1; tmp1 = tmp1.replace( "\n", "" ) ){
+	}
+	// “ü—Íƒ`ƒFƒbƒN
+	if ( tmp1.length != 54 ){
+	    // ’·’Z‚ª‚ ‚é
+	    alert( "’·’Z‚ª‚ ‚é" );
+	    return;
+	}
+	// 
+	if ( tmp1.indexOf( " " ) != -1 ){
+	    // –³Œø‚Èƒf[ƒ^‚ª‚ ‚é@‚»‚Ì‚P
+	    alert( "–³Œø‚Èƒf[ƒ^‚ª‚ ‚é@‚»‚Ì‚P" );
+	    return;
+	}
+	tmp2 = tmp1;
+	for ( ; tmp2.indexOf( "1" ) != -1; tmp2 = tmp2.replace( "1", "" ) ){
+	}
+	for ( ; tmp2.indexOf( "2" ) != -1; tmp2 = tmp2.replace( "2", "" ) ){
+	}
+	for ( ; tmp2.indexOf( "3" ) != -1; tmp2 = tmp2.replace( "3", "" ) ){
+	}
+	for ( ; tmp2.indexOf( "4" ) != -1; tmp2 = tmp2.replace( "4", "" ) ){
+	}
+	for ( ; tmp2.indexOf( "5" ) != -1; tmp2 = tmp2.replace( "5", "" ) ){
+	}
+	for ( ; tmp2.indexOf( "6" ) != -1; tmp2 = tmp2.replace( "6", "" ) ){
+	}
+	if ( tmp2.length != 0 ){
+	    // –³Œø‚Èƒf[ƒ^‚ª‚ ‚é@‚»‚Ì‚Q
+	    alert( "–³Œø‚Èƒf[ƒ^‚ª‚ ‚é@‚»‚Ì‚Q" );
+	    return;
+	}
+	// “ü—Íƒ`ƒFƒbƒNI
+	tmp2 = tmp1.substr( 0, 9 );
+	// 
+	for ( Counter = 0; Counter < 9; Counter++ ){
+		this.men_1[ Counter % 3 ][ parseInt( Counter / 3 ) ] = g_Color[ tmp2.charAt( Counter ) - 1 ];
+	}
+	tmp2 = tmp1.substr( 9, 9 );
+	// 
+	for ( Counter = 0; Counter < 9; Counter++ ){
+		this.men_2[ Counter % 3 ][ parseInt( Counter / 3 ) ] = g_Color[ tmp2.charAt( Counter ) - 1 ];
+	}
+	tmp2 = tmp1.substr( 18, 9 );
+	// 
+	for ( Counter = 0; Counter < 9; Counter++ ){
+		this.men_3[ Counter % 3 ][ parseInt( Counter / 3 ) ] = g_Color[ tmp2.charAt( Counter ) - 1 ];
+	}
+	tmp2 = tmp1.substr( 27, 9 );
+	// 
+	for ( Counter = 0; Counter < 9; Counter++ ){
+		this.men_4[ Counter % 3 ][ parseInt( Counter / 3 ) ] = g_Color[ tmp2.charAt( Counter ) - 1 ];
+	}
+	tmp2 = tmp1.substr( 36, 9 );
+	// 
+	for ( Counter = 0; Counter < 9; Counter++ ){
+		this.men_5[ Counter % 3 ][ parseInt( Counter / 3 ) ] = g_Color[ tmp2.charAt( Counter ) - 1 ];
+	}
+	tmp2 = tmp1.substr( 45, 9 );
+	// 
+	for ( Counter = 0; Counter < 9; Counter++ ){
+		this.men_6[ Counter % 3 ][ parseInt( Counter / 3 ) ] = g_Color[ tmp2.charAt( Counter ) - 1 ];
+	}
+}
+
+// 
+function f_DispTrace(){
+	var tmp = "";
+
+	tmp = tmp + "Q" + this.men_3[ 2 ][ 0 ] + this.men_3[ 1 ][ 0 ] + this.men_3[ 0 ][ 0 ] + "\n";
+	tmp = tmp + this.men_5[ 0 ][ 0 ] + this.men_1[ 0 ][ 2 ] + this.men_1[ 0 ][ 1 ] + this.men_1[ 0 ][ 0 ] + this.men_2[ 2 ][ 0 ] + "\n";
+	tmp = tmp + this.men_5[ 1 ][ 0 ] + this.men_1[ 1 ][ 2 ] + "›" + this.men_1[ 1 ][ 0 ] + this.men_2[ 1 ][ 0 ] + "\n";
+	tmp = tmp + this.men_5[ 2 ][ 0 ] + this.men_1[ 2 ][ 2 ] + this.men_1[ 2 ][ 1 ] + this.men_1[ 2 ][ 0 ] + this.men_2[ 0 ][ 0 ] + "\n";
+	tmp = tmp + "Q" + this.men_4[ 0 ][ 0 ] + this.men_4[ 1 ][ 0 ] + this.men_4[ 2 ][ 0 ] + "\n";
+	tmp = tmp + "\n";
+	tmp = tmp + "Q" + this.men_3[ 0 ][ 2 ] + this.men_3[ 1 ][ 2 ] + this.men_3[ 2 ][ 2 ] + "\n";
+	tmp = tmp + this.men_2[ 2 ][ 2 ] + this.men_6[ 0 ][ 0 ] + this.men_6[ 1 ][ 0 ] + this.men_6[ 2 ][ 0 ] + this.men_5[ 0 ][ 2 ] + "\n";
+	tmp = tmp + this.men_2[ 1 ][ 2 ] + this.men_6[ 0 ][ 1 ] + "~" + this.men_6[ 2 ][ 1 ] + this.men_5[ 1 ][ 2 ] + "\n";
+	tmp = tmp + this.men_2[ 0 ][ 2 ] + this.men_6[ 0 ][ 2 ] + this.men_6[ 1 ][ 2 ] + this.men_6[ 2 ][ 2 ] + this.men_5[ 2 ][ 2 ] + "\n";
+	tmp = tmp + "Q" + this.men_4[ 2 ][ 2 ] + this.men_4[ 1 ][ 2 ] + this.men_4[ 0 ][ 2 ] + "\n";
+	document.forms[0].DispTrace.value = tmp;
+}
+
+// –ß‚µ‹@”\‚Ì‚½‚ß‚ÉAó‘Ô‘Ş”ğ
+function f_Stack(){
+	var Counter1;
+	var Counter2;
+	
+	// 
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_1b[ Counter1 ][ Counter2 ] = this.men_1[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_2b[ Counter1 ][ Counter2 ] = this.men_2[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_3b[ Counter1 ][ Counter2 ] = this.men_3[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_4b[ Counter1 ][ Counter2 ] = this.men_4[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_5b[ Counter1 ][ Counter2 ] = this.men_5[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_6b[ Counter1 ][ Counter2 ] = this.men_6[ Counter1 ][ Counter2 ];
+		}
+	}
+}
+
+//
+function c_Cube(){
+	var Counter;
+	
+	// ’†S‚ª”’‚Ì–Ê‚Ì\¬iƒIƒŒƒ“ƒW‚Æ‰©F‚ğŠÜ‚ŞŠp‚ğ‹N“_‚Æ‚µ‚ÄA‰¡‚R‚˜c‚R‚Æl‚¦‚éj
+	this.men_1 = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_1.length; Counter++ ){
+		this.men_1[ Counter ] = new Array( "›", "›", "›" );
+	}
+	// ’†S‚ªÂ‚Ì–Ê‚Ì\¬
+	this.men_6 = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_6.length; Counter++ ){
+		this.men_6[ Counter ] = new Array( "~", "~", "~" );
+	}
+	// ’†S‚ªƒIƒŒƒ“ƒW‚Ì–Ê‚Ì\¬i”’‚ÆÚ‚µA”’‚ÉŒü‚©‚Á‚Ä¶‚ÌŠp‚ğ‹N“_j
+	this.men_2 = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_2.length; Counter++ ){
+		this.men_2[ Counter ] = new Array( "¢", "¢", "¢" );
+	}
+	// ’†S‚ªÔ‚Ì–Ê‚Ì\¬
+	this.men_5 = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_5.length; Counter++ ){
+		this.men_5[ Counter ] = new Array( " ", " ", " " );
+	}
+	// ’†S‚ª‰©‚Ì–Ê‚Ì\¬
+	this.men_3 = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_3.length; Counter++ ){
+		this.men_3[ Counter ] = new Array( "™", "™", "™" );
+	}
+	// ’†S‚ª—Î‚Ì–Ê‚Ì\¬
+	this.men_4 = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_4.length; Counter++ ){
+		this.men_4[ Counter ] = new Array( "¦", "¦", "¦" );
+	}
+	// –ß‚µ—Ìˆæ‚ÌŠ„‚è“–‚Ä
+	this.men_1b = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_1b.length; Counter++ ){
+		this.men_1b[ Counter ] = new Array( 3 );
+	}
+	// ’†S‚ªÂ‚Ì–Ê‚Ì\¬
+	this.men_6b = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_6b.length; Counter++ ){
+		this.men_6b[ Counter ] = new Array( 3 );
+	}
+	// ’†S‚ªƒIƒŒƒ“ƒW‚Ì–Ê‚Ì\¬i”’‚ÆÚ‚µA”’‚ÉŒü‚©‚Á‚Ä¶‚ÌŠp‚ğ‹N“_j
+	this.men_2b = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_2b.length; Counter++ ){
+		this.men_2b[ Counter ] = new Array( 3 );
+	}
+	// ’†S‚ªÔ‚Ì–Ê‚Ì\¬
+	this.men_5b = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_5b.length; Counter++ ){
+		this.men_5b[ Counter ] = new Array( 3 );
+	}
+	// ’†S‚ª‰©‚Ì–Ê‚Ì\¬
+	this.men_3b = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_3b.length; Counter++ ){
+		this.men_3b[ Counter ] = new Array( 3 );
+	}
+	// ’†S‚ª—Î‚Ì–Ê‚Ì\¬
+	this.men_4b = new Array( 3 );
+	// ‚»‚ê‚¼‚ê‚Ì‰¡‚É‘Î‚µ‚Äc‚ğŠ„‚è“–‚Ä‚éB
+	for ( Counter = 0; Counter < this.men_4b.length; Counter++ ){
+		this.men_4b[ Counter ] = new Array( 3 );
+	}
+	this.Disp = f_Disp;
+	this.R_Disp = f_R_Disp;
+	this.DispTrace = f_DispTrace;
+	this.Rotate_121A = f_Rotate_121A;this.Rotate_121B = f_Rotate_121B;this.Rotate_121C = f_Rotate_121C;
+	this.Rotate_123A = f_Rotate_123A;this.Rotate_123B = f_Rotate_123B;this.Rotate_123C = f_Rotate_123C;
+	this.Rotate_122A = f_Rotate_122A;this.Rotate_122B = f_Rotate_122B;this.Rotate_122C = f_Rotate_122C;
+	this.Rotate_131A = f_Rotate_131A;this.Rotate_131B = f_Rotate_131B;this.Rotate_131C = f_Rotate_131C;
+	this.Rotate_133A = f_Rotate_133A;this.Rotate_133B = f_Rotate_133B;this.Rotate_133C = f_Rotate_133C;
+	this.Rotate_132A = f_Rotate_132A;this.Rotate_132B = f_Rotate_132B;this.Rotate_132C = f_Rotate_132C;
+	this.Rotate_231A = f_Rotate_231A;this.Rotate_231B = f_Rotate_231B;this.Rotate_231C = f_Rotate_231C;
+	this.Rotate_233A = f_Rotate_233A;this.Rotate_233B = f_Rotate_233B;this.Rotate_233C = f_Rotate_233C;
+	this.Rotate_232A = f_Rotate_232A;this.Rotate_232B = f_Rotate_232B;this.Rotate_232C = f_Rotate_232C;
+	this.Break = f_Break;
+	this.Reset = f_Reset;
+	this.Input = f_Input;
+	this.Stack = f_Stack;
+	return;
+}
+
+/*
+‚R‚Â‚Ì”‚ğ¸‡‚É‚·‚éB
+’l‚Ìöó‚ÍƒOƒ[ƒoƒ‹•Ï”‚ğg‚¤B
+*/
+function f_ThreeSort(){
+	var tmp = new Array( 3 );
+	
+	if ( g_Arg_1[ 0 ] < g_Arg_1[ 1 ] ){
+		// 
+		if ( g_Arg_1[ 1 ] < g_Arg_1[ 2 ] ){
+		    // 123‚Ì‡
+		    tmp[ 0 ] = g_Arg_1[ 0 ];
+		    tmp[ 1 ] = g_Arg_1[ 1 ];
+		    tmp[ 2 ] = g_Arg_1[ 2 ];
+		}
+		else{
+			// 
+			if ( g_Arg_1[ 0 ] < g_Arg_1[ 2 ] ){
+			    // 132‚Ì‡
+			    tmp[ 0 ] = g_Arg_1[ 0 ];
+			    tmp[ 1 ] = g_Arg_1[ 2 ];
+			    tmp[ 2 ] = g_Arg_1[ 1 ];
+			}
+			else{
+			    // 312‚Ì‡
+			    tmp[ 0 ] = g_Arg_1[ 2 ];
+			    tmp[ 1 ] = g_Arg_1[ 0 ];
+			    tmp[ 2 ] = g_Arg_1[ 1 ];
+			}
+		}
+	}
+	else{
+		if ( g_Arg_1[ 0 ] < g_Arg_1[ 2 ] ){
+		    // 213‚Ì‡
+		    tmp[ 0 ] = g_Arg_1[ 1 ];
+		    tmp[ 1 ] = g_Arg_1[ 0 ];
+		    tmp[ 2 ] = g_Arg_1[ 2 ];
+		}
+		else{
+			// 
+			if ( g_Arg_1[ 1 ] < g_Arg_1[ 2 ] ){
+			    // 231‚Ì‡
+			    tmp[ 0 ] = g_Arg_1[ 1 ];
+			    tmp[ 1 ] = g_Arg_1[ 2 ];
+			    tmp[ 2 ] = g_Arg_1[ 0 ];
+			}
+			else{
+			    // 321‚Ì‡
+			    tmp[ 0 ] = g_Arg_1[ 2 ];
+			    tmp[ 1 ] = g_Arg_1[ 1 ];
+			    tmp[ 2 ] = g_Arg_1[ 0 ];
+			}
+		}
+	}
+	g_Arg_1[ 0 ] = tmp[ 0 ];
+	g_Arg_1[ 1 ] = tmp[ 1 ];
+	g_Arg_1[ 2 ] = tmp[ 2 ];
+	return;
+}
+
+/*
+Špî•ñ‚ğæ“¾‚·‚éB
+‘æ‚P“Y‚¦š‚ÍˆÊ’u‚ğ•\‚·B
+ˆÊ’u‚ÍA‚P‚Q‚R–Ê‚ª‹¤—L‚·‚éŠp‚ğ‚O‚Æ‚µA‚P‚Ì–Ê‚ğŒv‰ñ‚è‚É‚OA‚PA‚QA‚RB
+‚Q‚R‚U‚Ì–Ê‚ª‹¤—L‚·‚éŠp‚ğ‚S‚Æ‚µA‚U‚Ì–Ê‚ğŒv‰ñ‚è‚É‚SA‚TA‚UA‚VB
+‘æ‚Q“Y‚¦š‚Í\¬‚·‚éF‚ğ•\‚µA‚O‚Í‚P‚Ì–Ê‚©‚U‚Ì–Ê‚É—ˆ‚Ä‚¢‚éF‚ğ•\‚·B
+*/
+function f_GetAllCorner(){
+	// ‚P‚Ì–Ê‚ÌF
+	this.Corner[ 0 ][ 0 ] = this.men_1[ 0 ][ 0 ];
+	this.Corner[ 1 ][ 0 ] = this.men_1[ 2 ][ 0 ];
+	this.Corner[ 2 ][ 0 ] = this.men_1[ 2 ][ 2 ];
+	this.Corner[ 3 ][ 0 ] = this.men_1[ 0 ][ 2 ];
+	// ‚U‚Ì–Ê‚ÌF
+	this.Corner[ 4 ][ 0 ] = this.men_6[ 0 ][ 0 ];
+	this.Corner[ 5 ][ 0 ] = this.men_6[ 2 ][ 0 ];
+	this.Corner[ 6 ][ 0 ] = this.men_6[ 2 ][ 2 ];
+	this.Corner[ 7 ][ 0 ] = this.men_6[ 0 ][ 2 ];
+	// c‚è
+	this.Corner[ 0 ][ 1 ] = this.men_2[ 2 ][ 0 ];
+	this.Corner[ 1 ][ 1 ] = this.men_2[ 0 ][ 0 ];
+	this.Corner[ 1 ][ 2 ] = this.men_4[ 2 ][ 0 ];
+	this.Corner[ 2 ][ 1 ] = this.men_4[ 0 ][ 0 ];
+	this.Corner[ 2 ][ 2 ] = this.men_5[ 2 ][ 0 ];
+	this.Corner[ 3 ][ 1 ] = this.men_5[ 0 ][ 0 ];
+	this.Corner[ 3 ][ 2 ] = this.men_3[ 2 ][ 0 ];
+	this.Corner[ 0 ][ 2 ] = this.men_3[ 0 ][ 0 ];
+	this.Corner[ 4 ][ 1 ] = this.men_3[ 0 ][ 2 ];
+	this.Corner[ 5 ][ 1 ] = this.men_3[ 2 ][ 2 ];
+	this.Corner[ 5 ][ 2 ] = this.men_5[ 0 ][ 2 ];
+	this.Corner[ 6 ][ 1 ] = this.men_5[ 2 ][ 2 ];
+	this.Corner[ 6 ][ 2 ] = this.men_4[ 0 ][ 2 ];
+	this.Corner[ 7 ][ 1 ] = this.men_4[ 2 ][ 2 ];
+	this.Corner[ 7 ][ 2 ] = this.men_2[ 0 ][ 2 ];
+	this.Corner[ 4 ][ 2 ] = this.men_2[ 2 ][ 2 ];
+	return;
+}
+
+/*
+–{—ˆ‚ÌŠp‚ğ’T‚·
+ˆø”‚Í–{—ˆ‚ÌŠp‚Ì”Ô†i‚O|‚Wj
+Œ»İ‚ÌˆÊ’u‚ğ•Ô‚·
+*/
+function f_FindCorner( pst ){
+	var tmp1;
+	var tmp2;
+	var Counter;
+	
+	// –{—ˆ‚ÌŠp‚ÌF‚ğæ“¾‚µ‚Ä‰ÁH
+	g_Arg_1[ 0 ] = g_BaseCorner[ pst ][ 0 ];
+	g_Arg_1[ 1 ] = g_BaseCorner[ pst ][ 1 ];
+	g_Arg_1[ 2 ] = g_BaseCorner[ pst ][ 2 ];
+	f_ThreeSort();
+	tmp1 = g_Arg_1[ 0 ] + g_Arg_1[ 1 ] + g_Arg_1[ 2 ];
+	// Œ»İ‚ÌŠp‚ğ‰ÁH‚µ‚Â‚Â”äŠr
+	for ( Counter = 0; Counter < this.Corner.length; Counter++ ){
+		g_Arg_1[ 0 ] = this.Corner[ Counter ][ 0 ];
+		g_Arg_1[ 1 ] = this.Corner[ Counter ][ 1 ];
+		g_Arg_1[ 2 ] = this.Corner[ Counter ][ 2 ];
+		f_ThreeSort();
+		tmp2 = g_Arg_1[ 0 ] + g_Arg_1[ 1 ] + g_Arg_1[ 2 ];
+		// 
+		if ( tmp1 == tmp2 ){
+		    // Œ©‚Â‚©‚Á‚½
+		    break;
+		}
+	}
+	return ( Counter );
+}
+
+// ‚O‚ÌŠp‚ğ‡‚í‚¹‚é
+function f_SetCorner0(){
+	var pst;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	this.Stack();
+	g_TraceFlag = "ON";
+	f_Tracer( "‡B" );
+	this.GetAllCorner();
+	pst = this.FindCorner( 0 );
+	// ‚Ç‚ÌˆÊ’u‚É‚ ‚é‚©
+	switch ( pst ){
+	    case 1:{
+	        // ‚P‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_231A();
+	        break;
+	    }
+	    case 2:{
+	        // ‚Q‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_231C();
+	        break;
+	    }
+	    case 3:{
+	        // ‚R‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_231B();
+	        break;
+	    }
+	    case 4:{
+	        // ‚S‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_131C();
+	        this.Rotate_231A();
+	        break;
+	    }
+	    case 5:{
+	        // ‚T‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_121C();
+	        break;
+	    }
+	    case 6:{
+	        // ‚U‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_233B();
+	        this.Rotate_121C();
+	        break;
+	    }
+	    case 7:{
+	        // ‚V‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_131C();
+	        break;
+	    }
+	    default:{ // Šù‚É‡‚Á‚Ä‚¢‚é
+	        break;
+	    }
+	}
+	// Œü‚«‚ğ‡‚í‚¹‚é
+	// Œü‚«‚ª‡‚Á‚Ä‚È‚¢‚©
+	if ( this.men_1[ 0 ][ 0 ] != "›" ){
+		// ‚Q‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é‚©
+		if ( this.men_2[ 2 ][ 0 ] == "›" ){
+		    // ‚Q‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é
+	        this.Rotate_131A();
+	        this.Rotate_121B();
+		}
+		else{
+		    // ‚R‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é
+	        this.Rotate_121A();
+	        this.Rotate_131B();
+		}
+	}
+	g_TraceFlag = "OFF";
+	document.forms[0].Status.value = "";
+}
+
+// ‚Q‚ÌŠp‚ğ‡‚í‚¹‚é
+function f_SetCorner2(){
+	var pst;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	this.Stack();
+	g_TraceFlag = "ON";
+	f_Tracer( "‡C" );
+	this.GetAllCorner();
+	pst = this.FindCorner( 2 );
+	// ‚Ç‚ÌˆÊ’u‚É‚ ‚é‚©
+	switch ( pst ){
+	    case 0:{
+	        // ‚O‚ÌˆÊ’u‚É‚ ‚é
+	        alert( "LOGICAL ERROR" );
+			g_TraceFlag = "OFF";
+	        return;
+	    }
+	    case 1:{
+	        // ‚P‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_123B();
+	        break;
+	    }
+	    case 3:{
+	        // ‚R‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_133B();
+	        break;
+	    }
+	    case 4:{
+	        // ‚S‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_233A();
+	        this.Rotate_133C();
+	        break;
+	    }
+	    case 5:{
+	        // ‚T‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_133C();
+	        break;
+	    }
+	    case 6:{
+	        // ‚U‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_233B();
+	        this.Rotate_133C();
+	        break;
+	    }
+	    case 7:{
+	        // ‚V‚ÌˆÊ’u‚É‚ ‚é
+	        this.Rotate_123C();
+	        break;
+	    }
+	    default:{ // Šù‚É‡‚Á‚Ä‚¢‚é
+	        break;
+	    }
+	}
+	// Œü‚«‚ğ‡‚í‚¹‚é
+	// Œü‚«‚ª‡‚Á‚Ä‚È‚¢‚©
+	if ( this.men_1[ 2 ][ 2 ] != "›" ){
+		// ‚T‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é‚©
+		if ( this.men_5[ 2 ][ 0 ] == "›" ){
+		    // ‚T‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é
+	        this.Rotate_133B();
+	        this.Rotate_123A();
+		}
+		else{
+		    // ‚S‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é
+	        this.Rotate_123B();
+	        this.Rotate_133A();
+		}
+	}
+	g_TraceFlag = "OFF";
+	document.forms[0].Status.value = "";
+}
+
+// ‚P‚ÌŠp‚ğ‡‚í‚¹‚é
+function f_SetCorner1(){
+	var pst;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	this.Stack();
+	g_TraceFlag = "ON";
+	f_Tracer( "‡D" );
+	this.GetAllCorner();
+	pst = this.FindCorner( 1 );
+	// Šù‚É‡‚Á‚Ä‚¢‚é‚©
+	if ( ( pst == 1 )&&( this.Corner[ pst ][ 0 ] == "›" ) ){
+	    // 
+		g_TraceFlag = "OFF";
+		document.forms[0].Status.value = "";
+		return;
+	}
+	// ‚P‚Ì–Ê‘¤‚É‚ ‚é‚©
+	if ( pst <= 3 ){
+		// ‚P‚Ì–Ê‘¤
+		// ‚P‚ÌŠp‚©
+		if ( pst == 1 ){
+		    // ‚P‚ÌŠp
+			// ‚P‚ÌF‚ª‚Q‚Ì–Ê‚É‚ ‚é‚©
+			if ( this.men_2[ 0 ][ 0 ] == "›" ){
+			    // ‚Q‚Ì–Ê
+			    this.Rotate_131B();
+			    this.Rotate_233B();
+			    this.Rotate_131A();
+			    this.Rotate_233A();
+			}
+			else{
+			    // ‚S‚Ì–Ê
+			    this.Rotate_123A();
+			    this.Rotate_233A();
+			    this.Rotate_123B();
+			    this.Rotate_233B();
+			}
+		}
+		else{
+		    // ‚R‚ÌŠp
+			// ‚P‚ÌF‚ª‚R‚Ì–Ê‚É‚ ‚é‚©
+			if ( this.men_3[ 2 ][ 0 ] == "›" ){
+			    // ‚R‚Ì–Ê
+			    this.Rotate_121B();
+			    this.Rotate_233C();
+			    this.Rotate_121A();
+			}
+			else{
+			    // ‚P‚Ì–Ê‚©‚T‚Ì–Ê
+			    this.Rotate_133A();
+			    this.Rotate_233C();
+			    this.Rotate_133B();
+			}
+		}
+	}
+	else{
+		// ‚U‚Ì–Ê‘¤
+		// ‚U‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é‚©
+		if ( this.Corner[ pst ][ 0 ] == "›" ){
+			// ‚P‚ÌF‚ğ‚U‚Ì–ÊˆÈŠO‚É‚µA‚V‚ÌŠp‚ÉˆÚ“®‚·‚é
+			// ‚T‚ÌˆÊ’u‚ÉˆÚ“®‚³‚¹‚é
+			switch ( pst ){
+			    case 4:{
+			        // ‚S‚ÌˆÊ’u
+				    this.Rotate_233A();
+			        break;
+			    }
+			    case 6:{
+			        // ‚U‚ÌˆÊ’u
+				    this.Rotate_233B();
+			        break;
+			    }
+			    case 7:{
+			        // ‚V‚ÌˆÊ’u
+				    this.Rotate_233C();
+			        break;
+			    }
+			    default:{
+			        break;
+			    }
+			}
+			// ‚V‚ÌŠp‚ÉA‚P‚ÌF‚ª‚U‚Ì–ÊˆÈŠO‚ÅˆÚ“®‚·‚é
+		    this.Rotate_133A();
+		    this.Rotate_233A();
+		    this.Rotate_133B();
+		}
+		else{
+			// ‚V‚ÌŠp‚ÉˆÚ“®‚·‚é
+			switch ( pst ){
+			    case 4:{
+			        // ‚S‚ÌˆÊ’u
+				    this.Rotate_233B();
+			        break;
+			    }
+			    case 5:{
+			        // ‚V‚ÌˆÊ’u
+				    this.Rotate_233C();
+			        break;
+			    }
+			    case 6:{
+			        // ‚U‚ÌˆÊ’u
+				    this.Rotate_233A();
+			        break;
+			    }
+			    default:{
+			        break;
+			    }
+			}
+		}
+	}
+	// ‚V‚ÌŠp‚ÉA‚P‚ÌF‚ª‚U‚Ì–ÊˆÈŠO‚Å‚ ‚é
+	// ‚P‚ÌF‚ª‚Q‚Ì–Ê‚É‚ ‚é‚©
+	if ( this.men_2[ 0 ][ 2 ] == "›" ){
+	    // ‚Q‚Ì–Ê
+	    this.Rotate_131B();
+	    this.Rotate_233B();
+	    this.Rotate_131A();
+	}
+	else{
+	    // ‚S‚Ì–Ê
+	    this.Rotate_123A();
+	    this.Rotate_233A();
+	    this.Rotate_123B();
+	}
+	g_TraceFlag = "OFF";
+	document.forms[0].Status.value = "";
+}
+
+// ‚R‚ÌŠp‚ğ‡‚í‚¹‚é
+function f_SetCorner3(){
+	var pst;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	this.Stack();
+	g_TraceFlag = "ON";
+	f_Tracer( "‡E" );
+	this.GetAllCorner();
+	pst = this.FindCorner( 3 );
+	// “®‚©‚·•K—v‚ª‚È‚¢‚©
+	if ( ( pst == 3 )&&( this.Corner[ pst ][ 0 ] == "›" ) ){
+	    // 
+		g_TraceFlag = "OFF";
+		document.forms[0].Status.value = "";
+		return;
+	}
+	// Œü‚«‚ªˆá‚¤‚¾‚¯‚©
+	if ( pst == 3 ){
+		// ‚R‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é‚©
+		if ( this.men_3[ 2 ][ 0 ] == "›" ){
+		    // ‚R‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é
+		    this.Rotate_121B();
+		    this.Rotate_233A();
+		    this.Rotate_121A();
+		}
+		else{
+		    // ‚T‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é
+		    this.Rotate_133A();
+		    this.Rotate_233B();
+		    this.Rotate_133B();
+		}
+	}
+	else{
+		// ‚U‚Ì–Ê‚É‚P‚ÌF‚ª‚ ‚é‚©
+		if ( this.Corner[ pst ][ 0 ] == "›" ){
+			// ‚T‚ÌˆÊ’u‚ÉˆÚ“®‚³‚¹‚é
+			switch ( pst ){
+			    case 4:{
+			        // ‚S‚ÌˆÊ’u
+				    this.Rotate_233A();
+			        break;
+			    }
+			    case 6:{
+			        // ‚U‚ÌˆÊ’u
+				    this.Rotate_233B();
+			        break;
+			    }
+			    case 7:{
+			        // ‚V‚ÌˆÊ’u
+				    this.Rotate_233C();
+			        break;
+			    }
+			    default:{
+			        break;
+			    }
+			}
+		    this.Rotate_133A();
+		    this.Rotate_233A();
+		    this.Rotate_133B();
+		}
+	}
+	// ‚P‚Æ‚U‚Ì–ÊˆÈŠO‚É‚P‚ÌF‚ª‚ ‚é
+	// 
+	if ( ( this.men_3[ 0 ][ 2 ] == "›" )||( this.men_5[ 2 ][ 2 ] == "›" ) ){
+	    // 
+	    this.Rotate_233A();
+	}
+	// ‚P‚ÌF‚ª‚ ‚éˆÊ’u‚Í‚U‘ğ
+	// 
+	if ( this.men_2[ 0 ][ 2 ] == "›" ){
+	    // ‚V‚ÌŠp‚Ì‚Q‚Ì–Ê
+	    this.Rotate_121B();
+	    this.Rotate_233C();
+	    this.Rotate_121A();
+	}
+	else{
+		// 
+		if ( this.men_2[ 2 ][ 2 ] == "›" ){
+		    // ‚S‚ÌŠp‚Ì‚Q‚Ì–Ê
+		    this.Rotate_133A();
+		    this.Rotate_233A();
+		    this.Rotate_133B();
+		}
+		else{
+			// 
+			if ( this.men_3[ 2 ][ 2 ] == "›" ){
+			    // ‚T‚ÌŠp‚Ì‚R‚Ì–Ê
+			    this.Rotate_121B();
+			    this.Rotate_233A();
+			    this.Rotate_121A();
+			}
+			else{
+				// 
+				if ( this.men_5[ 0 ][ 2 ] == "›" ){
+				    // ‚T‚ÌŠp‚Ì‚T‚Ì–Ê
+				    this.Rotate_133A();
+				    this.Rotate_233B();
+				    this.Rotate_133B();
+				}
+				else{
+					// 
+					if ( this.men_4[ 0 ][ 2 ] == "›" ){
+					    // ‚U‚ÌŠp‚Ì‚S‚Ì–Ê
+					    this.Rotate_121B();
+					    this.Rotate_233B();
+					    this.Rotate_121A();
+					}
+					else{
+					    // ‚V‚ÌŠp‚Ì‚S‚Ì–Ê
+					    this.Rotate_133A();
+					    this.Rotate_233C();
+					    this.Rotate_133B();
+					}
+				}
+			}
+		}
+	}
+	g_TraceFlag = "OFF";
+	document.forms[0].Status.value = "";
+}
+
+// 
+function f_SetCornerA(){
+	var tmp;
+
+	tmp = g_TraceFlag;
+	g_TraceFlag = "ON";
+	f_Tracer( "‚S‚Ì–Ê‚Ì‰E‘¤‚©‚çŠp’²®" );
+	g_TraceFlag = "OFF";
+	this.Rotate_133B();
+	this.Rotate_233B();
+	this.Rotate_133A();
+	this.Rotate_233B();
+	this.Rotate_123B();
+	this.Rotate_233A();
+	this.Rotate_123A();
+	g_TraceFlag = tmp;
+}
+
+// 
+function f_SetCornerB(){
+	var tmp;
+
+	tmp = g_TraceFlag;
+	g_TraceFlag = "ON";
+	f_Tracer( "‚S‚Ì–Ê‚Ì¶‘¤‚©‚çŠp’²®" );
+	g_TraceFlag = "OFF";
+	this.Rotate_131B();
+	this.Rotate_233A();
+	this.Rotate_131A();
+	this.Rotate_233A();
+	this.Rotate_123A();
+	this.Rotate_233B();
+	this.Rotate_123B();
+	g_TraceFlag = tmp;
+}
+
+// 
+function f_Back(){
+	var Counter1;
+	var Counter2;
+	
+	// 
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_1[ Counter1 ][ Counter2 ] = this.men_1b[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_2[ Counter1 ][ Counter2 ] = this.men_2b[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_3[ Counter1 ][ Counter2 ] = this.men_3b[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_4[ Counter1 ][ Counter2 ] = this.men_4b[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_5[ Counter1 ][ Counter2 ] = this.men_5b[ Counter1 ][ Counter2 ];
+		}
+	}
+	for ( Counter1 = 0; Counter1 < 3; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < 3; Counter2++ ){
+			this.men_6[ Counter1 ][ Counter2 ] = this.men_6b[ Counter1 ][ Counter2 ];
+		}
+	}
+}
+
+// 
+function f_SetCornerLeft1(){
+	var tmp;
+	var Counter;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	this.Stack();
+	g_TraceFlag = "ON";
+	f_Tracer( "‡F" );
+	// Šù‚É‡‚Á‚Ä‚¢‚é‚©
+	tmp = this.men_2[ 0 ][ 2 ] + this.men_2[ 2 ][ 2 ] + this.men_3[ 0 ][ 2 ] + this.men_3[ 2 ][ 2 ];
+	tmp = tmp + this.men_4[ 0 ][ 2 ] + this.men_4[ 2 ][ 2 ] + this.men_5[ 0 ][ 2 ] + this.men_5[ 2 ][ 2 ];
+	if ( tmp == "¢¢™™¦¦  " ){
+		document.forms[0].Status.value = "";
+		return;
+	}
+	// ‡‚Á‚Ä‚¢‚é‚Æ‚±‚ª‚È‚¢‚©
+	tmp = ( this.men_6[ 0 ][ 0 ] + this.men_6[ 0 ][ 2 ] + this.men_6[ 2 ][ 0 ] + this.men_6[ 2 ][ 2 ] ).indexOf( "~" );
+	switch ( tmp ){
+	    case -1:{
+		    // ‚P‚Â‡‚í‚¹‚é
+			// 
+			if ( this.men_2[ 2 ][ 2 ] == "~" ){
+			    // 
+			    this.SetCornerA();
+			}
+			else{
+			    // 
+			    this.SetCornerA();
+			    this.SetCornerA();
+			}
+	        break;
+	    }
+	    case 1:{
+		    // 
+			this.Rotate_233A();
+	        break;
+	    }
+	    case 2:{
+		    // 
+			this.Rotate_233B();
+	        break;
+	    }
+	    case 3:{
+		    // 
+			this.Rotate_233C();
+	        break;
+	    }
+	    default:{
+	        break;
+	    }
+	}
+	// Šp‚S‚ÌˆÊ’u‚Ì‚U‚Ì–Ê‚Í‡‚Á‚Ä‚¢‚é
+	// Šp‚T‚ÌˆÊ’u‚ÌŠp‚ª³‚µ‚¢Šp‚Å‚Í‚È‚¢‚©
+	tmp = ( this.men_3[ 2 ][ 2 ] + this.men_5[ 0 ][ 2 ] + this.men_6[ 2 ][ 0 ] ).indexOf( this.men_3[ 0 ][ 2 ] );
+	if ( tmp == -1 ){
+	    // 
+		this.Rotate_233A();
+		this.SetCornerA();
+		this.Rotate_233B();
+		tmp = ( this.men_3[ 2 ][ 2 ] + this.men_5[ 0 ][ 2 ] + this.men_6[ 2 ][ 0 ] ).indexOf( this.men_3[ 0 ][ 2 ] );
+		if (  tmp == -1 ){
+		    // 
+			this.Rotate_233B();
+			this.SetCornerA();
+			this.Rotate_233C();
+		}
+	}
+	// Šp‚S‚ÆŠp‚T‚Í‘Î‚É‚È‚Á‚Ä‚¢‚é
+	for ( ; this.men_6[ 2 ][ 0 ] != "~"; this.SetCornerB() ){
+	}
+	// Šp‚S‚ÆŠp‚T‚Ì‚U‚Ì–Ê‚Í‡‚Á‚Ä‚¢‚é
+	document.forms[0].Status.value = "";
+}
+
+// 
+function f_SetCornerLeft2(){
+	var tmp;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	g_TraceFlag = "ON";
+	f_Tracer( "‡G" );
+	// cŠp‚ÌˆÊ’u‡‚í‚¹
+	this.GetAllCorner();
+	tmp = this.Corner[ 7 ][ 0 ] + this.Corner[ 7 ][ 1 ] + this.Corner[ 7 ][ 2 ];
+	// 
+	if ( tmp.indexOf( this.men_2[ 2 ][ 2 ] ) == -1 ){
+	    // 
+		this.SetCornerA();
+		this.SetCornerA();
+		this.SetCornerA();
+	}
+	// Šù‚É‡‚Á‚Ä‚¢‚é‚©
+	this.GetAllCorner();
+	if ( this.Corner[ 7 ][ 0 ] == "~" ){
+	    // 
+		document.forms[0].Status.value = "";
+	    return;
+	}
+	// ƒpƒ^[ƒ“•ªŠò
+	if ( this.men_2[ 0 ][ 2 ] == "~" ){
+	    // 
+		this.Rotate_233C();
+		this.SetCornerA();
+		this.SetCornerA();
+		this.Rotate_233C();
+		this.SetCornerA();
+		this.SetCornerB();
+		this.SetCornerB();
+		this.SetCornerB();
+		this.SetCornerB();
+		this.SetCornerB();
+	}
+	else{
+	    // 
+		this.SetCornerA();
+		this.SetCornerA();
+		this.SetCornerA();
+		this.Rotate_233C();
+		this.SetCornerA();
+		this.SetCornerA();
+		this.Rotate_233C();
+		this.SetCornerA();
+		this.SetCornerB();
+		this.SetCornerB();
+	}
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ‚P‚Ì–Ê‚Æ‚U‚Ì–Ê‚Ì‚QFƒp[ƒc‚ÅA‚Q‚Ì–Ê‚ÉŒ×‚é‚à‚ÌˆÈŠO‚ÅA‡‚Á‚Ä‚¢‚È‚¢ˆÊ’u‚ğŒ©‚Â‚¯‚é
+ * @returns Œ©‚Â‚©‚ç‚È‚¢ê‡‚Í‚OB<br>
+ *          Œ©‚Â‚©‚Á‚½ê‡‚ÍAƒvƒ‰ƒX’l‚È‚ç‚P‚Ì–Ê‚ÉŒ×‚èAƒ}ƒCƒiƒX’l‚È‚ç‚U‚Ì–Ê‚ÉŒ×‚éA‚à‚¤ˆê•û‚Ì–Ê‚Ì”Ô†B
+ */
+function f_FindTwo1( obj ){
+	// 
+	if ( obj.men_1[ 0 ][ 0 ] + obj.men_3[ 0 ][ 0 ] != obj.men_1[ 0 ][ 1 ] + obj.men_3[ 1 ][ 0 ] ){
+	    // 
+	    return 3;
+	}
+	if ( obj.men_1[ 2 ][ 2 ] + obj.men_4[ 0 ][ 0 ] != obj.men_1[ 2 ][ 1 ] + obj.men_4[ 1 ][ 0 ] ){
+	    // 
+	    return 4;
+	}
+	if ( obj.men_1[ 0 ][ 2 ] + obj.men_5[ 0 ][ 0 ] != obj.men_1[ 1 ][ 2 ] + obj.men_5[ 1 ][ 0 ] ){
+	    // 
+	    return 5;
+	}
+	if ( obj.men_6[ 0 ][ 0 ] + obj.men_3[ 0 ][ 2 ] != obj.men_6[ 1 ][ 0 ] + obj.men_3[ 1 ][ 2 ] ){
+	    // 
+	    return -3;
+	}
+	if ( obj.men_6[ 2 ][ 2 ] + obj.men_4[ 0 ][ 2 ] != obj.men_6[ 1 ][ 2 ] + obj.men_4[ 1 ][ 2 ] ){
+	    // 
+	    return -4;
+	}
+	if ( obj.men_6[ 2 ][ 0 ] + obj.men_5[ 0 ][ 2 ] != obj.men_6[ 2 ][ 1 ] + obj.men_5[ 1 ][ 2 ] ){
+	    // 
+	    return -5;
+	}
+	return 0;
+}
+
+/**
+ * ˆø”‚Å“n‚³‚ê‚½‚P‚Ì–Ê‚Æ‚U‚Ì–Ê‚Ì‚QFƒp[ƒc‚ğ’T‚·
+ * @param dst ’T‚·‚QFƒp[ƒc[destination]<br>
+ * @param obj ƒNƒ‰ƒX©‘Ì[object]
+ * @return •Ô‚è’l—pƒOƒ[ƒoƒ‹•Ï”‚Å•Ô‚·B<br>
+ *         “Y‚¦š‚O‚ÍA‚P‚ÌF‚©‚U‚ÌF‚ª‚ ‚é–Ê‚Ì”B<br>
+ *         “Y‚¦š‚P‚ÍAŒ×‚é–Ê‚Ì”B<br>
+ *         “Y‚¦š‚Q‚ÍA‚P‚Ì–Ê‚©‚U‚Ì–Ê‚ÉŒ×‚éê‡‚ÉA‚à‚¤ˆê•û‚ÌŒ×‚é–Ê‚Ì”B
+ */
+function f_FindTwo2( dst, obj ){
+	var tmp;
+	var pst;
+
+	// 
+	switch ( Math.abs( dst ) ){
+	    case 2:{
+			// 
+			if ( dst > 0 ){
+			    // 
+			    tmp = "›" + obj.men_2[ 0 ][ 0 ] + obj.men_2[ 0 ][ 0 ] + "›";
+			}
+			else{
+			    // 
+			    tmp = "~" + obj.men_2[ 0 ][ 2 ] + obj.men_2[ 0 ][ 2 ] + "~";
+			}
+	        break;
+	    }
+	    case 3:{
+			// 
+			if ( dst > 0 ){
+			    // 
+			    tmp = "›" + obj.men_3[ 0 ][ 0 ] + obj.men_3[ 0 ][ 0 ] + "›";
+			}
+			else{
+			    // 
+			    tmp = "~" + obj.men_3[ 0 ][ 2 ] + obj.men_3[ 0 ][ 2 ] + "~";
+			}
+	        break;
+	    }
+	    case 4:{
+			// 
+			if ( dst > 0 ){
+			    // 
+			    tmp = "›" + obj.men_4[ 0 ][ 0 ] + obj.men_4[ 0 ][ 0 ] + "›";
+			}
+			else{
+			    // 
+			    tmp = "~" + obj.men_4[ 0 ][ 2 ] + obj.men_4[ 0 ][ 2 ] + "~";
+			}
+	        break;
+	    }
+	    default:{
+			// 
+			if ( dst > 0 ){
+			    // 
+			    tmp = "›" + obj.men_5[ 0 ][ 0 ] + obj.men_5[ 0 ][ 0 ] + "›";
+			}
+			else{
+			    // 
+			    tmp = "~" + obj.men_5[ 0 ][ 2 ] + obj.men_5[ 0 ][ 2 ] + "~";
+			}
+	        break;
+	    }
+	}
+	// 
+	pst = tmp.indexOf( obj.men_1[ 1 ][ 0 ] + obj.men_2[ 1 ][ 0 ] );
+	if ( pst != -1 ){
+		// 
+	    g_Arg_1[ 2 ] = 2;
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 1;
+		    g_Arg_1[ 1 ] = 2;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 1;
+		    g_Arg_1[ 0 ] = 2;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_1[ 2 ][ 1 ] + obj.men_4[ 1 ][ 0 ] );
+	if ( pst != -1 ){
+		// 
+	    g_Arg_1[ 2 ] = 4;
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 1;
+		    g_Arg_1[ 1 ] = 4;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 1;
+		    g_Arg_1[ 0 ] = 4;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_1[ 1 ][ 2 ] + obj.men_5[ 1 ][ 0 ] );
+	if ( pst != -1 ){
+		// 
+	    g_Arg_1[ 2 ] = 5;
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 1;
+		    g_Arg_1[ 1 ] = 5;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 1;
+		    g_Arg_1[ 0 ] = 5;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_1[ 0 ][ 1 ] + obj.men_3[ 1 ][ 0 ] );
+	if ( pst != -1 ){
+		// 
+	    g_Arg_1[ 2 ] = 3;
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 1;
+		    g_Arg_1[ 1 ] = 3;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 1;
+		    g_Arg_1[ 0 ] = 3;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_6[ 1 ][ 0 ] + obj.men_3[ 1 ][ 2 ] );
+	if ( pst != -1 ){
+		// 
+	    g_Arg_1[ 2 ] = 3;
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 6;
+		    g_Arg_1[ 1 ] = 3;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 6;
+		    g_Arg_1[ 0 ] = 3;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_6[ 2 ][ 1 ] + obj.men_5[ 1 ][ 2 ] );
+	if ( pst != -1 ){
+		// 
+	    g_Arg_1[ 2 ] = 5;
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 6;
+		    g_Arg_1[ 1 ] = 5;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 6;
+		    g_Arg_1[ 0 ] = 5;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_6[ 1 ][ 2 ] + obj.men_4[ 1 ][ 2 ] );
+	if ( pst != -1 ){
+		// 
+	    g_Arg_1[ 2 ] = 4;
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 6;
+		    g_Arg_1[ 1 ] = 4;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 6;
+		    g_Arg_1[ 0 ] = 4;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_6[ 0 ][ 1 ] + obj.men_2[ 1 ][ 2 ] );
+	if ( pst != -1 ){
+		// 
+	    g_Arg_1[ 2 ] = 2;
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 6;
+		    g_Arg_1[ 1 ] = 2;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 6;
+		    g_Arg_1[ 0 ] = 2;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_2[ 2 ][ 1 ] + obj.men_3[ 0 ][ 1 ] );
+	if ( pst != -1 ){
+		// 
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 2;
+		    g_Arg_1[ 1 ] = 3;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 2;
+		    g_Arg_1[ 0 ] = 3;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_3[ 2 ][ 1 ] + obj.men_5[ 0 ][ 1 ] );
+	if ( pst != -1 ){
+		// 
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 3;
+		    g_Arg_1[ 1 ] = 5;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 3;
+		    g_Arg_1[ 0 ] = 5;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_5[ 2 ][ 1 ] + obj.men_4[ 0 ][ 1 ] );
+	if ( pst != -1 ){
+		// 
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 5;
+		    g_Arg_1[ 1 ] = 4;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 5;
+		    g_Arg_1[ 0 ] = 4;
+		}
+	}
+	// 
+	pst = tmp.indexOf( obj.men_4[ 2 ][ 1 ] + obj.men_2[ 0 ][ 1 ] );
+	if ( pst != -1 ){
+		// 
+		if ( pst == 0 ){
+		    // 
+		    g_Arg_1[ 0 ] = 4;
+		    g_Arg_1[ 1 ] = 2;
+		}
+		else{
+		    // 
+		    g_Arg_1[ 1 ] = 4;
+		    g_Arg_1[ 0 ] = 2;
+		}
+	}
+}
+
+/**
+ * ‚P‚Æ‚U‚Ì–Ê‚Ì‰ñ“]Šp“x‚ğAŠp‚Ì‘¤–ÊF‚ğ—Š‚è‚É‘¤–Ê‚Æ‡‚í‚¹‚é
+ */
+function f_Base16(){
+	// ‚P‚Ì–Ê‚ğ‡‚í‚¹‚é
+	switch ( this.men_2[ 0 ][ 0 ] ){
+	    case " ":{
+	        // 
+			this.Rotate_231C();
+	        break;
+	    }
+	    case "™":{
+	        // 
+			this.Rotate_231A();
+	        break;
+	    }
+	    case "¦":{
+	        // 
+			this.Rotate_231B();
+	        break;
+	    }
+	    default:{
+	        break;
+	    }
+	}
+	// ‚U‚Ì–Ê‚ğ‡‚í‚¹‚é
+	switch ( this.men_2[ 0 ][ 2 ] ){
+	    case " ":{
+	        // 
+			this.Rotate_233C();
+	        break;
+	    }
+	    case "™":{
+	        // 
+			this.Rotate_233A();
+	        break;
+	    }
+	    case "¦":{
+	        // 
+			this.Rotate_233B();
+	        break;
+	    }
+	    default:{
+	        break;
+	    }
+	}
+}
+
+/**
+ * ‚QFƒp[ƒc‚˜‚U‚ğ‡‚í‚¹‚é
+ */
+function f_SetTwo(){
+	var Counter;
+	var rn;
+	var tmp;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	g_TraceFlag = "ON";
+	f_Tracer( "‡H" );
+	// 
+	for ( Counter = 0; Counter < 6; Counter++ ){
+		this.Base16();
+		this.Disp();
+		this.R_Disp();
+		this.DispTrace();
+		rn = f_FindTwo1( this );
+// 
+/*
+if ( !confirm( "1 2009/09/14 : " + rn ) ){
+    // 
+    return;
+}
+*/
+		// 
+		if ( rn == 0 ){
+		    // 
+		    break;
+		}
+		f_FindTwo2( rn, this );
+		// ‚P‚Ì–Ê‚Æ‚U‚Ì–Ê‚ÌŠÔ‚Ìƒ‰ƒCƒ“ˆÈŠO‚È‚çA‚»‚±‚ÉˆÚ“®‚·‚é
+		// ‚P‚Ì–Ê‚ÉŒ×‚Á‚Ä‚¢‚é‚©
+		if ( ( g_Arg_1[ 0 ] == 1 )||( g_Arg_1[ 1 ] == 1 ) ){
+		    // ‚P‚Ì–Ê‚ÉŒ×‚Á‚Ä‚¢‚é
+		    // ‚Q‚Ì–Ê‚ÉˆÚ“®‚µ‚Ä‚©‚ç”²‚«
+			switch ( g_Arg_1[ 2 ] ){
+			    case 3:{
+			        // 
+					this.Rotate_231B();
+			        break;
+			    }
+			    case 4:{
+			        // 
+					this.Rotate_231A();
+			        break;
+			    }
+			    case 5:{
+			        // 
+					this.Rotate_231C();
+			        break;
+			    }
+			    default:{
+			        break;
+			    }
+			}
+			this.Rotate_131A();
+			this.Rotate_232A();
+			this.Rotate_123B();
+			this.Disp();
+			this.R_Disp();
+			this.DispTrace();
+		}
+		// ‚U‚Ì–Ê‚ÉŒ×‚Á‚Ä‚¢‚é‚©
+		if ( ( g_Arg_1[ 0 ] == 6 )||( g_Arg_1[ 1 ] == 6 ) ){
+		    // ‚U‚Ì–Ê‚ÉŒ×‚Á‚Ä‚¢‚é
+		    // ‚Q‚Ì–Ê‚ÉˆÚ“®‚µ‚Ä‚©‚ç”²‚«
+			switch ( g_Arg_1[ 2 ] ){
+			    case 3:{
+			        // 
+					this.Rotate_233B();
+			        break;
+			    }
+			    case 4:{
+			        // 
+					this.Rotate_233A();
+			        break;
+			    }
+			    case 5:{
+			        // 
+					this.Rotate_233C();
+			        break;
+			    }
+			    default:{
+			        break;
+			    }
+			}
+			this.Rotate_131B();
+			this.Rotate_232A();
+			this.Rotate_123A();
+			this.Disp();
+			this.R_Disp();
+			this.DispTrace();
+		}
+		// ‚P‚Ì–Ê‚Æ‚U‚Ì–Ê‚ÌŠÔ‚Ìƒ‰ƒCƒ“‚Å‚Q‚RˆÈŠO‚ÌˆÊ’u‚É‚ ‚éê‡‚ÉˆÚ“®
+		// 
+		if ( g_Arg_1[ 0 ] < g_Arg_1[ 1 ] ){
+		    // 
+		    tmp = "" + g_Arg_1[ 0 ] + g_Arg_1[ 1 ];
+		}
+		else{
+		    // 
+		    tmp = "" + g_Arg_1[ 1 ] + g_Arg_1[ 0 ];
+		}
+		// 
+		if ( ( tmp.indexOf( "1" ) == -1 )&&( tmp.indexOf( "6" ) == -1 ) ){
+		    // 
+			// 
+			switch ( tmp ){
+			    case "35":{
+			        // 
+					this.Rotate_121C();
+					this.Rotate_232B();
+					this.Rotate_133C();
+					this.Rotate_232A();
+			        break;
+			    }
+			    case "45":{
+			        // 
+					this.Rotate_123C();
+					this.Rotate_131C();
+					this.Rotate_232A();
+					this.Rotate_123C();
+					this.Rotate_133C();
+					this.Rotate_232B();
+			        break;
+			    }
+			    case "24":{
+			        // 
+					this.Rotate_131C();
+					this.Rotate_232A();
+					this.Rotate_123C();
+					this.Rotate_232B();
+			        break;
+			    }
+			    default:{
+			        break;
+			    }
+			}
+		}
+		this.Base16();
+		this.Disp();
+		this.R_Disp();
+		this.DispTrace();
+		// ‚P‚Ì–Ê‚Æ‚U‚Ì–Ê‚ÌŠÔ‚Ìƒ‰ƒCƒ“‚Ì‚Q‚R‚ÌˆÊ’u‚É‚ ‚é
+		// ‡‚í‚¹‚é‚Æ‚±‚ë‚ğ‚S‚Ì–Ê‚ÉˆÚ“®‚·‚é
+		switch ( rn ){
+		    case 3:{
+		        // 
+				this.Rotate_231C();
+				this.Rotate_233B();
+		        break;
+		    }
+		    case 4:{
+		        // 
+				this.Rotate_233B();
+		        break;
+		    }
+		    case 5:{
+		        // 
+				this.Rotate_231A();
+				this.Rotate_233B();
+		        break;
+		    }
+		    case -3:{
+		        // 
+				this.Rotate_231B();
+				this.Rotate_233C();
+		        break;
+		    }
+		    case -4:{
+		        // 
+				this.Rotate_231B();
+		        break;
+		    }
+		    default:{
+		        // 
+				this.Rotate_231B();
+				this.Rotate_233A();
+		        break;
+		    }
+		}
+		this.Disp();
+		this.R_Disp();
+		this.DispTrace();
+		// Œü‚«‚É‚æ‚Á‚Ä‡‚í‚¹•û‚ª‚Q’Ê‚è
+		if ( ( this.men_2[ 2 ][ 1 ] == "›" )||( this.men_2[ 2 ][ 1 ] == "~" ) ){
+			// 
+			if ( this.men_2[ 2 ][ 1 ] == "›" ){
+			    // 
+				this.Rotate_123B();
+				this.Rotate_232C();
+				this.Rotate_121B();
+			}
+			else{
+			    // 
+				this.Rotate_123A();
+				this.Rotate_232C();
+				this.Rotate_121A();
+			}
+		}
+		else{
+			if ( this.men_3[ 0 ][ 1 ] == "›" ){
+			    // 
+				this.Rotate_123A();
+				this.Rotate_232B();
+				this.Rotate_131B();
+			}
+			else{
+			    // 
+				this.Rotate_123B();
+				this.Rotate_232B();
+				this.Rotate_131A();
+			}
+		}
+		this.Disp();
+		this.R_Disp();
+		this.DispTrace();
+// 
+/*
+if ( !confirm( "2 2009/09/14" ) ){
+    // 
+    return;
+}
+*/
+	}
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ‚QFƒp[ƒc‚P‚Q‚ğ‚Q‚R‚ÌˆÊ’u‚ÉA‚P‚ğ‚R‚Ì–Ê‚É‚µ‚Ä‡‚í‚¹‚é
+ */
+function f_SetLast1(){
+	var tmp;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	g_TraceFlag = "ON";
+	f_Tracer( "‡I" );
+	this.Base16();
+	this.Disp();
+	this.R_Disp();
+	this.DispTrace();
+	// Šù‚É‡‚Á‚Ä‚¢‚é‚©
+	if ( ( this.men_2[ 2 ][ 1 ] == "¢" )&&( this.men_3[ 0 ][ 1 ] == "›" ) ){
+	    // Šù‚É‡‚Á‚Ä‚¢‚é
+		document.forms[0].Status.value = "";
+		return;
+	}
+	// ‚P‚Q‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_2[ 1 ][ 0 ] + this.men_1[ 1 ][ 0 ] + this.men_1[ 1 ][ 0 ] + this.men_2[ 1 ][ 0 ];
+	// 
+	if ( tmp.indexOf( "›¢" ) != -1 ){
+	    // ‚P‚Æ‚U‚Ì–Ê‚ÌŠÔ‚Ìƒ‰ƒCƒ“‚ÉˆÚ“®
+		this.Rotate_131A();
+		this.Rotate_232A();
+		this.Rotate_123B();
+		this.Base16();
+	}
+	// ‚Q‚U‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_2[ 1 ][ 2 ] + this.men_6[ 0 ][ 1 ] + this.men_6[ 0 ][ 1 ] + this.men_2[ 1 ][ 2 ];
+	// 
+	if ( tmp.indexOf( "›¢" ) != -1 ){
+	    // ‚P‚Æ‚U‚Ì–Ê‚ÌŠÔ‚Ìƒ‰ƒCƒ“‚ÉˆÚ“®
+		this.Rotate_131B();
+		this.Rotate_232A();
+		this.Rotate_123A();
+		this.Base16();
+	}
+	// ‚P‚Æ‚U‚Ì–Ê‚ÌŠÔ‚Ìƒ‰ƒCƒ“‚É‚ ‚é
+	// ‚Q‚S‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_4[ 2 ][ 1 ] + this.men_2[ 0 ][ 1 ] + this.men_2[ 0 ][ 1 ] + this.men_4[ 2 ][ 1 ];
+	// 
+	if ( tmp.indexOf( "›¢" ) != -1 ){
+	    // ‚S‚T‚ÌˆÊ’u‚ÉˆÚ“®
+	    this.Rotate_123C();
+	    this.Rotate_232C();
+	    this.Rotate_121C();
+		this.Base16();
+	}
+	// ‚S‚T‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_5[ 2 ][ 1 ] + this.men_4[ 0 ][ 1 ] + this.men_4[ 0 ][ 1 ] + this.men_5[ 2 ][ 1 ];
+	// 
+	if ( tmp.indexOf( "›¢" ) != -1 ){
+	    // ‚R‚T‚ÌˆÊ’u‚ÉˆÚ“®
+	    this.Rotate_133C();
+	    this.Rotate_232C();
+	    this.Rotate_131C();
+		this.Base16();
+		this.Disp();
+		this.R_Disp();
+		this.DispTrace();
+	}
+	// ‚R‚T‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_3[ 2 ][ 1 ] + this.men_5[ 0 ][ 1 ] + this.men_5[ 0 ][ 1 ] + this.men_3[ 2 ][ 1 ];
+	// 
+	if ( tmp.indexOf( "›¢" ) != -1 ){
+	    // ‚Q‚R‚ÌˆÊ’u‚ÉˆÚ“®
+	    this.Rotate_121C();
+	    this.Rotate_232C();
+	    this.Rotate_123C();
+		this.Base16();
+		this.Disp();
+		this.R_Disp();
+		this.DispTrace();
+	}
+	// ‚Q‚R‚ÌˆÊ’u‚É‚ ‚é
+	// Šù‚É‡‚Á‚Ä‚¢‚é‚©
+	if ( ( this.men_2[ 2 ][ 1 ] == "¢" )&&( this.men_3[ 0 ][ 1 ] == "›" ) ){
+	    // Šù‚É‡‚Á‚Ä‚¢‚é
+		return;
+	}
+	// ˆÊ’u‚Q‚R‚Å‚P‚ª‚Q
+	this.Rotate_232B();
+	this.Rotate_121B();
+	this.Rotate_232A();
+	this.Rotate_131A();
+    this.Rotate_232C();
+    this.Rotate_133C();
+	this.Base16();
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ‚QFƒp[ƒc‚Q‚U‚ğ‚Q‚S‚ÌˆÊ’u‚ÉA‚U‚ğ‚S‚Ì–Ê‚É‚µ‚Ä‡‚í‚¹‚é
+ */
+function f_SetLast2(){
+	var tmp;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	g_TraceFlag = "ON";
+	f_Tracer( "‡J" );
+	this.Base16();
+	// Šù‚É‡‚Á‚Ä‚¢‚é‚©
+	if ( ( this.men_4[ 2 ][ 1 ] == "~" )&&( this.men_2[ 0 ][ 1 ] == "¢" ) ){
+	    // Šù‚É‡‚Á‚Ä‚¢‚é
+		document.forms[0].Status.value = "";
+		return;
+	}
+	// ‚P‚Q‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_1[ 1 ][ 0 ] + this.men_2[ 1 ][ 0 ] + this.men_2[ 1 ][ 0 ] + this.men_1[ 1 ][ 0 ];
+	if ( tmp.indexOf( "~¢" ) != -1 ){
+	    // 
+		this.Rotate_232A();
+		this.Rotate_123A();
+		this.Rotate_232A();
+		this.Rotate_133A();
+		this.Base16();
+	}
+	// ‚Q‚U‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_6[ 0 ][ 1 ] + this.men_2[ 1 ][ 2 ] + this.men_2[ 1 ][ 2 ] + this.men_6[ 0 ][ 1 ];
+	if ( tmp.indexOf( "~¢" ) != -1 ){
+	    // 
+		this.Rotate_232A();
+		this.Rotate_123B();
+		this.Rotate_232A();
+		this.Rotate_133B();
+		this.Base16();
+	}
+	// ‚P‚Æ‚U‚Ì–Ê‚ÌŠÔ‚Ìƒ‰ƒCƒ“‚É‚ ‚é
+	// ‚R‚T‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_3[ 2 ][ 1 ] + this.men_5[ 0 ][ 1 ] + this.men_5[ 0 ][ 1 ] + this.men_3[ 2 ][ 1 ];
+	if ( tmp.indexOf( "~¢" ) != -1 ){
+	    // 
+	    this.Rotate_133C();
+	    this.Rotate_123C();
+	    this.Rotate_232A();
+	    this.Rotate_133C();
+	    this.Rotate_232B();
+	    this.Rotate_133C();
+		this.Base16();
+	}
+	// ‚S‚T‚ÌˆÊ’u‚É‚ ‚é‚©
+	tmp = this.men_5[ 2 ][ 1 ] + this.men_4[ 0 ][ 1 ] + this.men_4[ 0 ][ 1 ] + this.men_5[ 2 ][ 1 ];
+	if ( tmp.indexOf( "~¢" ) != -1 ){
+	    // 
+	    this.Rotate_123C();
+	    this.Rotate_232A();
+	    this.Rotate_133C();
+		this.Base16();
+	}
+	// ‚Q‚S‚ÌˆÊ’u‚É‚ ‚é
+	// Šù‚É‡‚Á‚Ä‚¢‚é‚©
+	if ( ( this.men_4[ 2 ][ 1 ] == "~" )&&( this.men_2[ 0 ][ 1 ] == "¢" ) ){
+	    // Šù‚É‡‚Á‚Ä‚¢‚é
+		document.forms[0].Status.value = "";
+		return;
+	}
+	// ˆÊ’u‚Q‚S‚Å‚U‚ª‚Q
+    this.Rotate_123C();
+    this.Rotate_232C();
+    this.Rotate_133A();
+    this.Rotate_232B();
+    this.Rotate_123A();
+    this.Rotate_133C();
+	this.Base16();
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ‚P‚Æ‚U‚Ì–Ê‚ğŠ®¬‚³‚¹‚é
+ */
+function f_SetLast3(){
+	document.forms[0].Status.value = "ˆ—’†";
+	g_TraceFlag = "ON";
+	f_Tracer( "‡K" );
+	this.Base16();
+    this.Rotate_232C();
+    this.Rotate_133B();
+    this.Rotate_232C();
+    this.Rotate_131B();
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ‘¤–Êcˆ—
+ * ‘¤–Ê‚Ì‚QFƒp[ƒc‚ÅA‘Î–Ê‚É‚ ‚é‚à‚Ì‚ğ‡‚í‚¹‚é
+ */
+function f_SetLast4(){
+	document.forms[0].Status.value = "ˆ—’†";
+	g_TraceFlag = "ON";
+	f_Tracer( "‡L" );
+	this.Base16();
+	// ˆÊ’u‚Q‚S‚ª‡‚Á‚Ä‚¢‚é‚©
+	if ( ( this.men_2[ 0 ][ 1 ] != "¢" )||( this.men_4[ 2 ][ 1 ] != "¦" ) ){
+	    // ‡‚Á‚Ä‚¢‚È‚¢
+		// ^‹t‚Å‘Î–Ê‚É‚ ‚é‚©
+		if ( ( this.men_5[ 2 ][ 1 ] == "¢" )&&( this.men_4[ 0 ][ 1 ] == "¦" ) ){
+		    // ‚ ‚é
+		    this.Rotate_232B();
+		    this.Rotate_123C();
+		    this.Rotate_232A();
+		    this.Rotate_133C();
+		}
+		// ^‹t‚Å‘ÎŠp‚É‚ ‚é‚©
+		if ( ( this.men_5[ 0 ][ 1 ] == "¢" )&&( this.men_3[ 2 ][ 1 ] == "¦" ) ){
+		    // ‚ ‚é
+		    this.Rotate_133C();
+		    this.Rotate_232B();
+		    this.Rotate_123C();
+		    this.Rotate_232A();
+		}
+		// ^‹t‚Åc’u‚É‚ ‚é‚©
+		if ( ( this.men_2[ 2 ][ 1 ] == "¢" )&&( this.men_3[ 0 ][ 1 ] == "¦" ) ){
+		    // ‚ ‚é
+		    this.Rotate_232A();
+		    this.Rotate_131C();
+		    this.Rotate_232B();
+		    this.Rotate_121C();
+		}
+	}
+	// ˆÊ’u‚Q‚R‚ª‡‚Á‚Ä‚¢‚é‚©
+	if ( ( this.men_2[ 2 ][ 1 ] != "¢" )||( this.men_3[ 0 ][ 1 ] != "™" ) ){
+	    // ‡‚Á‚Ä‚¢‚È‚¢
+		// ^‹t‚Å‘Î–Ê‚É‚ ‚é‚©
+		if ( ( this.men_5[ 0 ][ 1 ] == "¢" )&&( this.men_3[ 2 ][ 1 ] == "™" ) ){
+		    // ‚ ‚é
+		    this.Rotate_232A();
+		    this.Rotate_121C();
+		    this.Rotate_232B();
+		    this.Rotate_133C();
+		}
+		// ^‹t‚Å‘ÎŠp‚É‚ ‚é‚©
+		if ( ( this.men_5[ 2 ][ 1 ] == "¢" )&&( this.men_4[ 0 ][ 1 ] == "™" ) ){
+		    // ‚ ‚é
+		    this.Rotate_133C();
+		    this.Rotate_232A();
+		    this.Rotate_121C();
+		    this.Rotate_232B();
+		}
+		// ^‹t‚Åc’u‚É‚ ‚é‚©
+		if ( ( this.men_2[ 0 ][ 1 ] == "¢" )&&( this.men_4[ 2 ][ 1 ] == "™" ) ){
+		    // ‚ ‚é
+		    this.Rotate_232B();
+		    this.Rotate_131C();
+		    this.Rotate_232A();
+		    this.Rotate_123C();
+		}
+	}
+	// ˆÊ’u‚R‚T‚ª‡‚Á‚Ä‚¢‚é‚©
+	if ( ( this.men_5[ 0 ][ 1 ] != " " )||( this.men_3[ 2 ][ 1 ] != "™" ) ){
+	    // ‡‚Á‚Ä‚¢‚È‚¢
+		// ^‹t‚Å‘Î–Ê‚É‚ ‚é‚©
+		if ( ( this.men_2[ 2 ][ 1 ] == " " )&&( this.men_3[ 0 ][ 1 ] == "™" ) ){
+		    // ‚ ‚é
+		    this.Rotate_232B();
+		    this.Rotate_121C();
+		    this.Rotate_232A();
+		    this.Rotate_131C();
+		}
+		// ^‹t‚Å‘ÎŠp‚É‚ ‚é‚©
+		if ( ( this.men_2[ 0 ][ 1 ] == " " )&&( this.men_4[ 2 ][ 1 ] == "™" ) ){
+		    // ‚ ‚é
+		    this.Rotate_131C();
+		    this.Rotate_232B();
+		    this.Rotate_121C();
+		    this.Rotate_232A();
+		}
+		// ^‹t‚Åc’u‚É‚ ‚é‚©
+		if ( ( this.men_5[ 2 ][ 1 ] == " " )&&( this.men_4[ 0 ][ 1 ] == "™" ) ){
+		    // ‚ ‚é
+		    this.Rotate_232A();
+		    this.Rotate_133C();
+		    this.Rotate_232B();
+		    this.Rotate_123C();
+		}
+	}
+	// ˆÊ’u‚S‚T‚ª‡‚Á‚Ä‚¢‚é‚©
+	if ( ( this.men_5[ 2 ][ 1 ] != " " )||( this.men_4[ 0 ][ 1 ] != "¦" ) ){
+	    // ‡‚Á‚Ä‚¢‚È‚¢
+		// ^‹t‚Å‘Î–Ê‚É‚ ‚é‚©
+		if ( ( this.men_2[ 0 ][ 1 ] == " " )&&( this.men_4[ 2 ][ 1 ] == "¦" ) ){
+		    // ‚ ‚é
+		    this.Rotate_232A();
+		    this.Rotate_123C();
+		    this.Rotate_232B();
+		    this.Rotate_131C();
+		}
+		// ^‹t‚Å‘ÎŠp‚É‚ ‚é‚©
+		if ( ( this.men_2[ 2 ][ 1 ] == " " )&&( this.men_3[ 0 ][ 1 ] == "¦" ) ){
+		    // ‚ ‚é
+		    this.Rotate_131C();
+		    this.Rotate_232A();
+		    this.Rotate_123C();
+		    this.Rotate_232B();
+		}
+		// ^‹t‚Åc’u‚É‚ ‚é‚©
+		if ( ( this.men_5[ 0 ][ 1 ] == " " )&&( this.men_3[ 2 ][ 1 ] == "¦" ) ){
+		    // ‚ ‚é
+		    this.Rotate_232B();
+		    this.Rotate_133C();
+		    this.Rotate_232A();
+		    this.Rotate_121C();
+		}
+	}
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ‹“_•Ï‚¦©
+ */
+function f_RotateLeft(){
+	var tmp;
+
+	f_Tracer( "‹“_‚ğ‰E‚É‚X‚O“xˆÚ“®" );
+	tmp = new Array( 3 );
+	tmp[ 0 ] = new Array( 3 );
+	tmp[ 1 ] = new Array( 3 );
+	tmp[ 2 ] = new Array( 3 );
+	tmp = this.men_2;
+	this.men_2 = this.men_3;
+	this.men_3 = this.men_5;
+	this.men_5 = this.men_4;
+	this.men_4 = tmp;
+}
+
+/**
+ * ‹“_•Ï‚¦¨
+ */
+function f_RotateRight(){
+	var tmp;
+
+	f_Tracer( "‹“_‚ğ¶‚É‚X‚O“xˆÚ“®" );
+	tmp = new Array( 3 );
+	tmp[ 0 ] = new Array( 3 );
+	tmp[ 1 ] = new Array( 3 );
+	tmp[ 2 ] = new Array( 3 );
+	tmp = this.men_2;
+	this.men_2 = this.men_4;
+	this.men_4 = this.men_5;
+	this.men_5 = this.men_3;
+	this.men_3 = tmp;
+}
+
+/**
+ * ‹“_‡‚í‚¹‚Æ‘ÎŠp•â³
+ * “¯ˆê–Ê‚Å‚Ğ‚Ë‚è‚Ìê‡A‚»‚Ì–Ê‚ª¶–Ê‚É‚È‚é‚æ‚¤‚É
+ */
+function f_Rotate(){
+	var pst;
+	
+	document.forms[0].Status.value = "ˆ—’†";
+	g_TraceFlag = "ON";
+	f_Tracer( "‡M" );
+	// ‚Ğ‚Ë‚è‚ÌˆÊ’u‚ğ’T‚·
+	if ( this.men_2[ 0 ][ 1 ] != this.men_2[ 1 ][ 1 ] ){
+	    // 
+	    pst = 24;
+	}
+	else{
+		// 
+		if ( this.men_3[ 0 ][ 1 ] != this.men_3[ 1 ][ 1 ] ){
+		    // 
+		    pst = 23;
+		}
+		else{
+			// 
+			if ( this.men_5[ 0 ][ 1 ] != this.men_5[ 1 ][ 1 ] ){
+			    // 
+			    pst = 35;
+			}
+			else{
+				// 
+				if ( this.men_4[ 0 ][ 1 ] != this.men_4[ 1 ][ 1 ] ){
+				    // 
+				    pst = 45;
+				}
+				else{
+				    // Š®¬‚µ‚Ä‚é
+				    g_CompleteFlag= "ON";
+				    alert( "COMPLETE" );
+				}
+			}
+		}
+	}
+	// 
+	if ( g_CompleteFlag == "ON" ){
+	    // 
+		document.forms[0].Status.value = "";
+	    return;
+	}
+	// 
+	switch ( pst ){
+	    case 24:{
+			// 
+			if ( this.men_3[ 0 ][ 1 ] != this.men_3[ 1 ][ 1 ] ){
+			    // ‚Q‚S‚Æ‚Q‚R‚ª‚Ğ‚Ë‚è
+			    // ˆ—•s—v
+			}
+			else{
+				// 
+				if ( this.men_4[ 0 ][ 1 ] != this.men_4[ 1 ][ 1 ] ){
+				    // ‚Q‚S‚Æ‚S‚T‚ª‚Ğ‚Ë‚è
+				    this.RotateRight();
+				}
+				else{
+				    this.RotateRight();
+					this.Rotate_123C();
+				}
+			}
+	        break;
+	    }
+	    case 23:{
+			// 
+			if ( this.men_5[ 0 ][ 1 ] != this.men_5[ 1 ][ 1 ] ){
+			    // ‚Q‚R‚Æ‚R‚T‚ª‚Ğ‚Ë‚è
+			    this.RotateLeft();
+			}
+			else{
+				// 
+				if ( this.men_2[ 0 ][ 1 ] != this.men_2[ 1 ][ 1 ] ){
+				    // ‚Q‚R‚Æ‚Q‚S‚ª‚Ğ‚Ë‚è
+				    // ˆ—•s—v
+				}
+				else{
+					this.Rotate_123C();
+				}
+			}
+	        break;
+	    }
+	    case 35:{
+			// 
+			if ( this.men_4[ 0 ][ 1 ] != this.men_4[ 1 ][ 1 ] ){
+			    // ‚R‚T‚Æ‚S‚T‚ª‚Ğ‚Ë‚è
+			    this.RotateRight();
+			    this.RotateRight();
+			}
+			else{
+				// 
+				if ( this.men_3[ 0 ][ 1 ] != this.men_3[ 1 ][ 1 ] ){
+				    // ‚R‚T‚Æ‚Q‚R‚ª‚Ğ‚Ë‚è
+				    this.RotateLeft();
+				}
+				else{
+				    this.RotateRight();
+					this.Rotate_123C();
+				}
+			}
+	        break;
+	    }
+	    default:{ // 45
+			// 
+			if ( this.men_2[ 0 ][ 1 ] != this.men_2[ 1 ][ 1 ] ){
+			    // ‚S‚T‚Æ‚Q‚S‚ª‚Ğ‚Ë‚è
+			    this.RotateRight();
+			}
+			else{
+				// 
+				if ( this.men_5[ 0 ][ 1 ] != this.men_5[ 1 ][ 1 ] ){
+				    // ‚S‚T‚Æ‚R‚T‚ª‚Ğ‚Ë‚è
+				    this.RotateRight();
+				    this.RotateRight();
+				}
+				else{
+					this.Rotate_123C();
+				}
+			}
+	        break;
+	    }
+	}
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ‚Ğ‚Ë‚è‚ğ‡‚í‚¹‚é
+ * ¶–Ê‚É‚Ğ‚Ë‚è‚ªW’†‚µ‚Ä‚é‚±‚Æ‚ª‘O’ñB
+ * ˆá‚¤ƒP[ƒX‚Ìê‡‚ÍA‹“_•ÏX‚Å’²®‚·‚é‚±‚ÆB
+ */
+function f_Core1(){
+	document.forms[0].Status.value = "ˆ—’†";
+	// 
+	if ( g_CompleteFlag == "ON" ){
+	    // 
+		document.forms[0].Status.value = "";
+	    return;
+	}
+	g_TraceFlag = "ON";
+	f_Tracer( "‡N" );
+	this.Rotate_131B();
+	this.Rotate_122B();
+	this.Rotate_233A();
+	this.Rotate_122B();
+	this.Rotate_133A();
+	this.Rotate_122A();
+	this.Rotate_233A();
+	this.Rotate_122B();
+	this.Rotate_133A();
+	this.Rotate_122A();
+	this.Rotate_233C();
+	this.Rotate_122C();
+	this.Rotate_231A();
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ‚Ğ‚Ë‚è‡‚í‚¹ˆÈ~‚Ì•â³
+ * ‰E–Ê‚Æ‚»‚Ì”w–Ê‚ÌŠÔ‚Ìƒ‰ƒCƒ“‚ğ‰ñ‚·
+ */
+function f_Core2(){
+	document.forms[0].Status.value = "ˆ—’†";
+	// 
+	if ( g_CompleteFlag == "ON" ){
+	    // 
+		document.forms[0].Status.value = "";
+	    return;
+	}
+	g_TraceFlag = "ON";
+	f_Tracer( "‡O" );
+	// 
+	for ( ; this.men_1[ 2 ][ 0 ] != this.men_1[ 1 ][ 1 ]; this.Rotate_123A() ){
+	}
+	// 
+	for ( ; this.men_1[ 0 ][ 0 ] != this.men_1[ 1 ][ 1 ]; this.Rotate_121A() ){
+	}
+	document.forms[0].Status.value = "";
+}
+
+/**
+ * ÅŒã
+ */
+function f_Core3(){
+	document.forms[0].Status.value = "ˆ—’†";
+	// 
+	if ( g_CompleteFlag == "ON" ){
+	    // 
+		document.forms[0].Status.value = "";
+	    return;
+	}
+	this.Rotate_122A();
+	this.Rotate_131C();
+	this.Rotate_122B();
+	this.Rotate_233C();
+	this.Disp();
+	this.R_Disp();
+	this.DispTrace();
+    alert( "COMPLETE" );
+	document.forms[0].Status.value = "";
+}
+
+// 
+function c_Solve(){
+	var Counter;
+	
+	this.Corner = new Array( 8 );
+	// 
+	for ( Counter = 0; Counter < this.Corner.length ; Counter++ ){
+		this.Corner[ Counter ] = new Array( 3 );
+	}
+	this.GetAllCorner = f_GetAllCorner;
+	this.FindCorner = f_FindCorner;
+	this.SetCorner0 = f_SetCorner0;
+	this.SetCorner2 = f_SetCorner2;
+	this.SetCorner1 = f_SetCorner1;
+	this.SetCorner3 = f_SetCorner3;
+	this.SetCornerA = f_SetCornerA;
+	this.SetCornerB = f_SetCornerB;
+	this.SetCornerLeft1 = f_SetCornerLeft1;
+	this.SetCornerLeft2 = f_SetCornerLeft2;
+	this.SetTwo = f_SetTwo;
+	this.SetLast1 = f_SetLast1;
+	this.SetLast2 = f_SetLast2;
+	this.SetLast3 = f_SetLast3;
+	this.SetLast4 = f_SetLast4;
+	this.RotateLeft = f_RotateLeft;
+	this.RotateRight = f_RotateRight;
+	this.Rotate = f_Rotate;
+	this.Back = f_Back;
+	this.Base16 = f_Base16;
+	this.Core1 = f_Core1;
+	this.Core2 = f_Core2;
+	this.Core3 = f_Core3;
+}
+
+// 
+function f_Tracer( str ){
+	// İ’è‚ªON‚©
+	if ( g_TraceFlag == "ON" ){
+	    // 
+		document.forms[0].Trace.value = document.forms[0].Trace.value + str + "\n";
+	}
+	return;
+}
+
+// 
+function f_Copy(){
+	document.forms[0].Before.value = document.forms[0].Disp.value
+	document.forms[0].Before_R.value = document.forms[0].R_Disp.value
+	document.forms[0].Before_Trace.value = document.forms[0].DispTrace.value
+}
+
+// ƒf[ƒ^•ÏŠ·
+function f_Conv(){
+	var tmp;
+	var tmp2 = g_Color[ 0 ] + g_Color[ 1 ] + g_Color[ 2 ] + g_Color[ 3 ] + g_Color[ 4 ] + g_Color[ 5 ];
+	var data = "";
+	var tmp_Cube;
+	var Counter1;
+	var Counter2;
+
+	tmp_Cube = new  Array( 6 );
+	// 
+	for ( Counter1 = 0; Counter1 < tmp_Cube.length; Counter1++ ){
+		tmp_Cube[ Counter1 ] = new Array( 3 );
+		for ( Counter2 = 0; Counter2 < tmp_Cube[ Counter1 ].length; Counter2++ ){
+			tmp_Cube[ Counter1 ][ Counter2 ] = new Array( "", "", "" );
+		}
+	}
+	// ‚P‚Ì–Ê‚ğƒf[ƒ^‰»
+	tmp = document.forms[0].Before.value.split( "\n" );
+	color = tmp[ 0 ].charAt( 7 );
+	tmp_Cube[ 1 - 1 ][ 2 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 2 ].charAt( 4 );
+	tmp_Cube[ 1 - 1 ][ 2 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 2 ].charAt( 10 );
+	tmp_Cube[ 1 - 1 ][ 1 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 4 ].charAt( 1 );
+	tmp_Cube[ 1 - 1 ][ 2 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 4 ].charAt( 7 );
+	tmp_Cube[ 1 - 1 ][ 1 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 4 ].charAt( 13 );
+	tmp_Cube[ 1 - 1 ][ 0 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 6 ].charAt( 4 );
+	tmp_Cube[ 1 - 1 ][ 1 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 6 ].charAt( 10 );
+	tmp_Cube[ 1 - 1 ][ 0 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 8 ].charAt( 7 );
+	tmp_Cube[ 1 - 1 ][ 0 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	// ‚Q‚Ì–Ê‚ğƒf[ƒ^‰»
+	color = tmp[ 8 ].charAt( 0 );
+	tmp_Cube[ 2 - 1 ][ 0 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 10 ].charAt( 0 );
+	tmp_Cube[ 2 - 1 ][ 0 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 10 ].charAt( 3 );
+	tmp_Cube[ 2 - 1 ][ 1 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 13 ].charAt( 0 );
+	tmp_Cube[ 2 - 1 ][ 0 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 13 ].charAt( 3 );
+	tmp_Cube[ 2 - 1 ][ 1 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 13 ].charAt( 6 );
+	tmp_Cube[ 2 - 1 ][ 2 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 16 ].charAt( 3 );
+	tmp_Cube[ 2 - 1 ][ 1 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 16 ].charAt( 6 );
+	tmp_Cube[ 2 - 1 ][ 2 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 19 ].charAt( 6 );
+	tmp_Cube[ 2 - 1 ][ 2 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	// ‚R‚Ì–Ê‚ğƒf[ƒ^‰»
+	color = tmp[ 8 ].charAt( 16 );
+	tmp_Cube[ 3 - 1 ][ 2 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 10 ].charAt( 13 );
+	tmp_Cube[ 3 - 1 ][ 1 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 10 ].charAt( 16 );
+	tmp_Cube[ 3 - 1 ][ 2 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 13 ].charAt( 10 );
+	tmp_Cube[ 3 - 1 ][ 0 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 13 ].charAt( 13 );
+	tmp_Cube[ 3 - 1 ][ 1 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 13 ].charAt( 16 );
+	tmp_Cube[ 3 - 1 ][ 2 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 16 ].charAt( 10 );
+	tmp_Cube[ 3 - 1 ][ 0 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 16 ].charAt( 13 );
+	tmp_Cube[ 3 - 1 ][ 1 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 19 ].charAt( 10 );
+	tmp_Cube[ 3 - 1 ][ 0 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	// ‚S‚Ì–Ê‚ğƒf[ƒ^‰»
+	tmp = document.forms[0].Before_R.value.split( "\n" );
+	color = tmp[ 0 ].charAt( 10 );
+	tmp_Cube[ 4 - 1 ][ 0 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 3 ].charAt( 10 );
+	tmp_Cube[ 4 - 1 ][ 0 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 3 ].charAt( 13 );
+	tmp_Cube[ 4 - 1 ][ 1 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 6 ].charAt( 10 );
+	tmp_Cube[ 4 - 1 ][ 0 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 6 ].charAt( 13 );
+	tmp_Cube[ 4 - 1 ][ 1 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 6 ].charAt( 16 );
+	tmp_Cube[ 4 - 1 ][ 2 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 9 ].charAt( 13 );
+	tmp_Cube[ 4 - 1 ][ 1 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 9 ].charAt( 16 );
+	tmp_Cube[ 4 - 1 ][ 2 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 12 ].charAt( 16 );
+	tmp_Cube[ 4 - 1 ][ 2 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	// ‚T‚Ì–Ê‚ğƒf[ƒ^‰»
+	color = tmp[ 0 ].charAt( 6 );
+	tmp_Cube[ 5 - 1 ][ 2 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 3 ].charAt( 3 );
+	tmp_Cube[ 5 - 1 ][ 1 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 3 ].charAt( 6 );
+	tmp_Cube[ 5 - 1 ][ 2 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 6 ].charAt( 0 );
+	tmp_Cube[ 5 - 1 ][ 0 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 6 ].charAt( 3 );
+	tmp_Cube[ 5 - 1 ][ 1 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 6 ].charAt( 6 );
+	tmp_Cube[ 5 - 1 ][ 2 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 9 ].charAt( 0 );
+	tmp_Cube[ 5 - 1 ][ 0 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 9 ].charAt( 3 );
+	tmp_Cube[ 5 - 1 ][ 1 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 12 ].charAt( 0 );
+	tmp_Cube[ 5 - 1 ][ 0 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	// ‚U‚Ì–Ê‚ğƒf[ƒ^‰»
+	color = tmp[ 11 ].charAt( 7 );
+	tmp_Cube[ 6 - 1 ][ 2 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 13 ].charAt( 4 );
+	tmp_Cube[ 6 - 1 ][ 2 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 13 ].charAt( 10 );
+	tmp_Cube[ 6 - 1 ][ 1 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 15 ].charAt( 1 );
+	tmp_Cube[ 6 - 1 ][ 2 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 15 ].charAt( 7 );
+	tmp_Cube[ 6 - 1 ][ 1 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 15 ].charAt( 13 );
+	tmp_Cube[ 6 - 1 ][ 0 ][ 2 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 17 ].charAt( 4 );
+	tmp_Cube[ 6 - 1 ][ 1 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 17 ].charAt( 10 );
+	tmp_Cube[ 6 - 1 ][ 0 ][ 1 ] = tmp2.indexOf( color ) + 1;
+	color = tmp[ 19 ].charAt( 7 );
+	tmp_Cube[ 6 - 1 ][ 0 ][ 0 ] = tmp2.indexOf( color ) + 1;
+	// ˜AŒ‹
+	for ( Counter1 = 0; Counter1 < tmp_Cube.length; Counter1++ ){
+		for ( Counter2 = 0; Counter2 < tmp_Cube[ Counter1 ].length; Counter2++ ){
+			data = data + tmp_Cube[ Counter1 ][ 0 ][ Counter2 ] + tmp_Cube[ Counter1 ][ 1 ][ Counter2 ] + tmp_Cube[ Counter1 ][ 2 ][ Counter2 ];
+		}
+		data = data + "\n";
+	}
+	document.forms[0].Conv.value = data;
+}
+
+// ƒƒCƒ“
+// var Cube = new c_Cube();
+c_Solve.prototype = new c_Cube;
+var g_Solve = new c_Solve();
+var g_BaseCorner = new Array( 8 );
+var g_Arg_1 = new Array( 3 );
+var g_Counter;
+var g_TraceFlag = "OFF";
+var g_Color = new Array( "›", "¢", "™", "¦", " ", "~" );
+var g_CompleteFlag = "OFF";
+
+g_Solve.GetAllCorner();
+// –{—ˆ‚ÌŠpî•ñ‚ğ‘Ş”ğ‚·‚é
+for ( g_Counter = 0; g_Counter < g_BaseCorner.length; g_Counter++ ){
+	g_BaseCorner[ g_Counter ] = new Array( 3 );
+	g_BaseCorner[ g_Counter ][ 0 ] = g_Solve.Corner[ g_Counter ][ 0 ];
+	g_BaseCorner[ g_Counter ][ 1 ] = g_Solve.Corner[ g_Counter ][ 1 ];
+	g_BaseCorner[ g_Counter ][ 2 ] = g_Solve.Corner[ g_Counter ][ 2 ];
+}
+
+</script>
+<head>
+	<title>ƒ‹[ƒrƒbƒNƒLƒ…[ƒuƒVƒ~ƒ…ƒŒ[ƒ^</title>
+</head>
+<body>
+FireFox 3.5.5‚Å“®ì<br>
+<br>
+<form>
+	<table>
+		<tr>
+			<td>
+ó‘Ô
+<input type="text" name="Status" value="" readonly><br>
+<small>
+<input type="button" value="¡‡@•\¦¡" onClick="g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="ƒŠƒZƒbƒg" onClick="g_Solve.Reset();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="¡‡A‚­‚¸‚·¡" onClick="g_Solve.Break();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();f_Copy();f_Conv();"><br>
+<hr>
+ã–Êi‚wj‚©‚ç‚P—ñ–Ú<br>
+<input type="button" value="Y¨Z" onClick="g_Solve.Rotate_231A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Z¨Y" onClick="g_Solve.Rotate_231B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_231C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<br>
+ã–Êi‚wj‚©‚ç‚Q—ñ–Ú<br>
+<input type="button" value="Y¨Z" onClick="g_Solve.Rotate_232A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Z¨Y" onClick="g_Solve.Rotate_232B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_232C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<br>
+ã–Êi‚wj‚©‚ç‚R—ñ–Ú<br>
+<input type="button" value="Y¨Z" onClick="g_Solve.Rotate_233A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Z¨Y" onClick="g_Solve.Rotate_233B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_233C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<hr>
+¶–Êi‚xj‚©‚ç‚P—ñ–Ú<br>
+<input type="button" value="X¨Z" onClick="g_Solve.Rotate_131A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Z¨X" onClick="g_Solve.Rotate_131B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_131C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<br>
+¶–Êi‚xj‚©‚ç‚Q—ñ–Ú<br>
+<input type="button" value="X¨Z" onClick="g_Solve.Rotate_132A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Z¨X" onClick="g_Solve.Rotate_132B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_132C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<br>
+¶–Êi‚xj‚©‚ç‚R—ñ–Ú<br>
+<input type="button" value="X¨Z" onClick="g_Solve.Rotate_133A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Z¨X" onClick="g_Solve.Rotate_133B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_133C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<hr>
+‰E–Êi‚yj‚©‚ç‚P—ñ–Ú<br>
+<input type="button" value="X¨Y" onClick="g_Solve.Rotate_121A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Y¨X" onClick="g_Solve.Rotate_121B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_121C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<br>
+‰E–Êi‚yj‚©‚ç‚Q—ñ–Ú<br>
+<input type="button" value="X¨Y" onClick="g_Solve.Rotate_122A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Y¨X" onClick="g_Solve.Rotate_122B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_122C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<br>
+‰E–Êi‚yj‚©‚ç‚R—ñ–Ú<br>
+<input type="button" value="X¨Y" onClick="g_Solve.Rotate_123A();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="Y¨X" onClick="g_Solve.Rotate_123B();g_Solve.Disp();g_Solve.R_Disp();">
+<input type="button" value="”½“]" onClick="g_Solve.Rotate_123C();g_Solve.Disp();g_Solve.R_Disp();"><br>
+</small>
+			</td>
+			<td>
+<textarea name="Disp" cols="40" rows="25" readonly></textarea>
+			</td>
+			<td>
+<textarea name="R_Disp" cols="40" rows="25" readonly></textarea>
+			</td>
+			<td>
+<textarea name="Before" cols="40" rows="25" readonly></textarea>
+			</td>
+			<td>
+<textarea name="Before_R" cols="40" rows="25" readonly></textarea>
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td>
+<input type="text" name="Corner" value="1">
+<input type="button" value="‚ÌŠp‚ğ’T‚·" onClick="g_Solve.GetAllCorner();alert( g_Solve.FindCorner( document.forms[0].Corner.value ) );"><br>
+‡˜•K{<br>
+<input type="button" value="¡‡B‚O‚ÌŠp‚ğ‡‚í‚¹‚é¡" onClick="g_Solve.SetCorner0();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<input type="button" value="¡‡C‚Q‚ÌŠp‚ğ‡‚í‚¹‚é¡" onClick="g_Solve.SetCorner2();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<input type="button" value="¡‡D‚P‚ÌŠp‚ğ‡‚í‚¹‚é¡" onClick="g_Solve.SetCorner1();g_Solve.Disp();g_Solve.R_Disp();"><br>
+<input type="button" value="¡‡E‚R‚ÌŠp‚ğ‡‚í‚¹‚é¡" onClick="g_Solve.SetCorner3();g_Solve.Disp();g_Solve.R_Disp();"><br>
+			</td>
+			<td>
+‚Ps–Ú‚ÍA¶–Ê‚ğã‚É‚µ‚ÄAã‚©‚ç‡‚ÉF”Ô†‚ğ‚XƒRB<br>
+‚Q`‚Ts–ÚAã–Ê‚ğã‚É‚µ‚ÄAã‚©‚ç‡‚ÉF”Ô†‚ğ‚XƒRB<br>
+‚Us–Ú‚ÍA‰E–Ê‚ğã‚É‚µ‚ÄAã‚©‚ç‡‚ÉF”Ô†‚ğ‚XƒRB<br>
+<textarea name="In" cols="10" rows="8">
+245216161
+653226652
+143433635
+233341563
+524152414
+456164251
+</textarea>
+<input type="button" value="”½‰f" onClick="g_Solve.Input();g_Solve.Disp();g_Solve.R_Disp();">
+<textarea name="Conv" cols="10" rows="7" readonly></textarea>
+<input type="button" value="ƒf[ƒ^•ÏŠ·" onClick="f_Conv();">
+			</td>
+			<td>
+<input type="button" value="ã‚ğ‰E–Êi‚yj‚Æ‚·‚éAã–Êi‚wj‚Æ‚»‚Ì”w–Ê" onClick="g_Solve.DispTrace();"><br>
+<br>
+<!--
+<input type="button" value="‚S‚Ì–Ê‚Ì‰E‘¤‚©‚çŠp’²®" onClick="g_Solve.SetCornerA();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="‚S‚Ì–Ê‚Ì¶‘¤‚©‚çŠp’²®" onClick="g_Solve.SetCornerB();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+-->
+<input type="button" value="¡‡Fc‚è‚ÌŠp‚ğ‡‚í‚¹‚é‚P¡" onClick="g_Solve.SetCornerLeft1();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡Gc‚è‚ÌŠp‚ğ‡‚í‚¹‚é‚Q¡" onClick="g_Solve.SetCornerLeft2();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡H‚QFƒp[ƒc‚˜‚U‚ğ‡‚í‚¹‚é¡" onClick="g_Solve.SetTwo();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡I‚P‚Q‚ğ‚Q‚R‚ÖA‚P‚ğ‰E–Ê‚É‚µ‚Ä¡" onClick="g_Solve.SetLast1();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡J‚Q‚U‚ğ‚Q‚S‚ÖA‚U‚ğ‰E–Ê‚Ì”w–Ê‚É‚µ‚Ä¡" onClick="g_Solve.SetLast2();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡K‚P‚Æ‚U‚Ì–Ê‚ğŠ®¬‚³‚¹‚é¡" onClick="g_Solve.SetLast3();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡L‘¤–Êcˆ—¡" onClick="g_Solve.SetLast4();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<br>
+<input type="button" value="‹“_•Ï‚¦©" onClick="g_Solve.RotateLeft();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();">
+<input type="button" value="‹“_•Ï‚¦¨" onClick="g_Solve.RotateRight();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡M‹“_‡‚í‚¹‚Æ‘ÎŠp•â³¡" onClick="g_Solve.Rotate();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<!--
+<input type="button" value="¡‡LÅŒã¡" onClick="g_Solve.SetLast4();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+-->
+			</td>
+			<td>
+<textarea name="DispTrace" cols="15" rows="12" readonly></textarea>
+			</td>
+			<td>
+<input type="button" value="ƒRƒs[" onClick="f_Copy();"><br>
+<br>
+<!--
+<input type="button" value="–ß‚µ" onClick="g_Solve.Back();g_Solve.Disp();g_Solve.R_Disp();"><br>
+-->
+<br>
+<input type="button" value="ƒgƒŒ[ƒXÁ‹" onClick="document.forms[0].Trace.value = '';">
+<input type="button" value="‹ós‘}“ü" onClick="document.forms[0].Trace.value = document.forms[0].Trace.value + '\n';"><br>
+<br>
+<input type="button" value="¡‡NƒRƒA‚P¡" onClick="g_Solve.Core1();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡OƒRƒA‚Q¡" onClick="g_Solve.Core2();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+<input type="button" value="¡‡PƒRƒA‚R¡" onClick="g_Solve.Core3();g_Solve.Disp();g_Solve.R_Disp();g_Solve.DispTrace();"><br>
+			</td>
+			<td>
+<textarea name="Before_Trace" cols="15" rows="12" readonly></textarea>
+			</td>
+			<td>
+<textarea name="Trace" cols="25" rows="10" readonly></textarea>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,2 @@
+# RubikCubeSolver
+Javascriptでルービックキューブを解く
